@@ -127,3 +127,32 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+
+@font-face {
+  font-family: 'PaytoneOne';
+  src: url(./assets/fonts/PaytoneOne/PaytoneOne-Regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+  font-weight: 400;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /*CSS VARIABLES*/
+  --color-red: red;
+  --fs-xl: 40px;
+  --fs-lg: 40px;
+  --fs-md: 16px;
+  --fs-sm: 14px;
+  --fs-section-title: 40px;
+}

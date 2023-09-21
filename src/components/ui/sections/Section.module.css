@@ -1,0 +1,11 @@
+.container {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  outline: 1px solid red;
+}
+
+.title {
+  font-size: var(--fs-section-title);
+  color: var(--color-red);
+  letter-spacing: 1.2px;
+}
