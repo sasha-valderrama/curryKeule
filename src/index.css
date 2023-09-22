@@ -128,8 +128,6 @@ table {
   border-spacing: 0;
 }
 
-
-
 @font-face {
   font-family: 'PaytoneOne';
   src: url(./assets/fonts/PaytoneOne/PaytoneOne-Regular.ttf) format('ttf');
@@ -138,10 +136,9 @@ table {
 
 @font-face {
   font-family: 'Roboto';
-  src: url(./assets/fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format('ttf');
   font-weight: 400;
 }
-
 
 * {
   margin: 0;
@@ -149,10 +146,14 @@ table {
   box-sizing: border-box;
 
   /*CSS VARIABLES*/
-  --color-red: red;
-  --fs-xl: 40px;
-  --fs-lg: 40px;
-  --fs-md: 16px;
-  --fs-sm: 14px;
-  --fs-section-title: 40px;
+  --color-red: #ff0303;
+  --color-white: white;
+  --fs-xl: 2.5rem /*40px*/;
+  --fs-lg: 1.25rem /*20px*/;
+  --fs-md: 1rem /*16px*/;
+  --fs-sm: 0.87rem /*14px*/;
+  --fs-xs: 0.62rem /*10px*/;
+  --fs-section-title: var(--fs-xl) /*40px*/;
+  --fs-copyright: var(--fs-xs) /*12*/;
+  --ff-body: 'Roboto';
 }
