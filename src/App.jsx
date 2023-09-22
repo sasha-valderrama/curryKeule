@@ -7,10 +7,7 @@ function App() {
   return (
     <>
       <Header />
-      <Main
-        subtitle="Pass ma uff!"
-        title="Dein bester Keule im juten alten Wedding"
-      />
+      <Main />
       <Section section="Speisen und Getränke">
         <p>dfdfsfdsdfdfdsfdsfdsf</p>
       </Section>

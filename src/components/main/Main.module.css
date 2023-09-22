@@ -1,31 +1,32 @@
-.container {
-  top: 2rem;
+.main {
   height: 100vh;
   background-image: url(../../assets/images/bg__main.jpg);
-  background-size: cover;
-  font-family: monospace;
-  color: blue;
   display: flex;
   flex-direction: column;
-  z-index: 0;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 450px) {
-  .container {
-    background-image: url(../../assets/images/bg__main.jpg);
-    background-position: bottom center;
-  }
-}
-
-.banner {
+.container {
   margin-top: 5rem;
   margin-left: 2rem;
 }
 
-.title {
-  font-size: 40px;
+.heading {
+  max-width: 75%;
+  font-family: var(--ff-heading);
+  font-size: var(--fs-heading1);
   margin-bottom: 2rem;
+  color: var(--color-white);
+  text-shadow: -3px -3px 0 var(--color-red), 3px -3px 0 var(--color-red),
+    -3px 3px 0 var(--color-red), 3px 3px 0 var(--color-red);
+  line-height: 1.2;
+}
+
+@media screen and (min-width: 450px) {
+  .main {
+    background-image: url(../../assets/images/bg__main.jpg);
+    background-position: bottom center;
+  }
 }

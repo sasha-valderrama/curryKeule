@@ -162,9 +162,10 @@ table {
   --fs-md: 1rem /*16px*/;
   --fs-sm: 0.87rem /*14px*/;
   --fs-xs: 0.62rem /*10px*/;
-  --fs-copyright: 0.5rem /*8px*/;
+  --fs-xxs: 0.5rem /*8px*/;
+  --fs-heading1: var(--fs-xl);
   --fs-section-title: var(--fs-xl) /*40px*/;
-  --fs-copyright: var(--fs-xs) /*12*/;
+  --fs-copyright: var(--fs-xxs);
   --ff-body: 'Roboto';
   --ff-heading: 'PaytoneOne';
   --fw-bold: 700;
