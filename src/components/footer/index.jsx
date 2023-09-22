@@ -5,9 +5,9 @@ export default function Footer() {
     <footer className={FooterCSS.footer}>
       <div className={FooterCSS.main_container}>
         <div className={FooterCSS.divisor}></div>
-        <h2 className={FooterCSS.heading}>Komm vorbei!</h2>
+        <h2 className={FooterCSS.heading1}>Komm vorbei!</h2>
         <div className={FooterCSS.container}>
-          <h3 className={FooterCSS.subheading}>Wann?</h3>
+          <h3 className={FooterCSS.heading2}>Wann?</h3>
           <table className={FooterCSS.schedule}>
             <tr>
               <td>
@@ -36,21 +36,25 @@ export default function Footer() {
           </table>
         </div>
         <div className={FooterCSS.container}>
-          <h3 className={FooterCSS.subheading}>Wo?</h3>
+          <h3 className={FooterCSS.heading2}>Wo?</h3>
           <p className={FooterCSS.text}>Müllerstraße 47A, 13349 Berlin</p>
         </div>
-        <div className={FooterCSS.divisor}></div>
+        {/* <div className={FooterCSS.divisor}></div> */}
         <div className={FooterCSS.container}>
-          <h4 className={FooterCSS.subheading}>Pass ma uff, Keule!</h4>
+          <h4 className={FooterCSS.heading3}>Noch wat?</h4>
           <ul>
             <li>
-              <p className={FooterCSS.text}>Kontakt</p>
+              <p className={`${FooterCSS.text} ${FooterCSS.small}`}>Kontakt</p>
             </li>
             <li>
-              <p className={FooterCSS.text}>Impressum</p>
+              <p className={`${FooterCSS.text} ${FooterCSS.small}`}>
+                Impressum
+              </p>
             </li>
             <li>
-              <p className={FooterCSS.text}>Datenschutz</p>
+              <p className={`${FooterCSS.text} ${FooterCSS.small}`}>
+                Datenschutz
+              </p>
             </li>
           </ul>
           <img
@@ -59,8 +63,8 @@ export default function Footer() {
             alt="logo"
           ></img>
         </div>
-        <div className={FooterCSS.divisor}></div>
         <p className={FooterCSS.copyright}>&copy;2023, Curry Keule</p>
+        <div className={FooterCSS.divisor}></div>
       </div>
     </footer>
   )

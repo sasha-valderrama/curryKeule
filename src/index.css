@@ -154,20 +154,53 @@ table {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+:root {
   /*CSS VARIABLES*/
-  --color-red: #ff0303;
-  --color-white: white;
-  --fs-xl: 2.5rem /*40px*/;
-  --fs-lg: 1.25rem /*20px*/;
-  --fs-md: 1rem /*16px*/;
-  --fs-sm: 0.87rem /*14px*/;
-  --fs-xs: 0.62rem /*10px*/;
-  --fs-xxs: 0.5rem /*8px*/;
-  --fs-heading1: var(--fs-xl);
-  --fs-section-title: var(--fs-xl) /*40px*/;
+  --color-red: #da0000;
+  --color-white: #fff;
+  --color-black: #000;
+  --fs-xxl: 3.75rem; /*60px*/
+  --fs-xl: 2.5rem; /*40px*/
+  --fs-lg: 1.25rem; /*20px*/
+  --fs-md: 1rem; /*16px*/
+  --fs-sm: 0.87rem; /*14px*/
+  --fs-xs: 0.62rem; /*10px*/
+  --fs-xxs: 0.5rem; /*8px*/
+  --fs-heading1: var(--fs-xxl);
+  --fs-heading2: var(--fs-xl);
+  --fs-heading3: var(--fs-lg);
+  --fs-heading4: var(--fs-lg);
+  --fs-body: var(--fs-md);
+  --fs-body-small: var(--fs-sm);
   --fs-copyright: var(--fs-xxs);
   --ff-body: 'Roboto';
   --ff-heading: 'PaytoneOne';
   --fw-bold: 700;
   --fw-black: 900;
+  --bp-phones: 600px;
+  --bp-tablet: 768px;
+  --bp-laptops: 992px;
+  --bp-large: 1200px;
+}
+/* @media (width < 600px) {
+  :root {
+    --fs-xxl: 6rem;
+    --fs-xl: 4rem;
+    --fs-lg: 2rem;
+    --fs-xxs: 0.8rem;
+  }
+} */
+
+@media (width > 850px) {
+  :root {
+    --fs-xxl: 6rem;
+    --fs-xl: 4rem;
+    --fs-lg: 2rem;
+    --fs-md: 1.2rem;
+    --fs-sm: 1rem;
+    --fs-xs: 0.75rem;
+    --fs-xxs: 0.6rem;
+  }
 }

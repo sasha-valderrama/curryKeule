@@ -14,7 +14,7 @@
     #b80404,
     #a80404
   );
-  padding: 3rem 0.5rem 0.5rem;
+  padding: 2.5rem 0.5rem 1rem;
   position: relative;
 }
 
@@ -23,16 +23,18 @@
   gap: 2rem;
   flex-direction: column;
   color: var(--color-white);
-  margin: 1rem;
+  margin: 0.5rem 1rem;
+  text-shadow: 3px 2px 3px rgb(128, 0, 0);
 }
 
 .divisor {
   width: 100%;
-  height: 0.2rem;
+  height: 0.3rem;
   align-self: start;
-  border-radius: 1.7px;
+  border-radius: 0.1rem;
   background: var(--color-white);
-  box-shadow: rgba(0, 0, 0, 0.19) 0px 5px 10px, rgba(0, 0, 0, 0.23) 0px 3px 3px;
+  box-shadow: -1px -1px 20px rgba(141, 0, 0, 0.5),
+    1px 1px 20px rgba(141, 0, 0, 0.5);
 }
 
 .divisor:first-of-type {
@@ -43,27 +45,37 @@
   width: 65%;
 }
 
-.heading,
-.subheading {
+.heading1,
+.heading2,
+.heading3 {
   font-family: var(--ff-heading);
-  text-shadow: 3px 2px 4px #000000;
 }
 
-.heading {
-  font-size: var(--fs-section-title);
-  margin-top: -1rem;
+.heading1 {
+  font-size: var(--fs-heading2);
 }
 
-.subheading {
-  font-size: var(--fs-lg);
+.heading2 {
+  font-size: var(--fs-heading3);
   font-weight: var(--fs-bold);
+}
+
+.heading3 {
+  font-size: var(--fs-heading4);
+  font-weight: var(--fs-bold);
+  margin-bottom: -0.7rem;
 }
 
 .text {
   font-family: var(--ff-body);
-  font-weight: var(--fw-bold);
+  font-size: var(--fs-body);
   line-height: 1.5;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text,
+.copyright {
+  /* text-shadow: 3px 2px 3px var(--color-red); */
+  font-weight: var(--fw-black);
 }
 
 .container {
@@ -81,51 +93,54 @@
   margin-bottom: 1rem;
 }
 
+.small {
+  font-size: var(--fs-body-small);
+}
+
 .logo {
   position: absolute;
   width: 25%;
   max-width: 310px;
   height: auto;
-  right: 1%;
-  bottom: 1%;
+  right: 5%;
+  bottom: 2.5rem;
   margin-right: 1rem;
 }
 
 .copyright {
   font-family: var(--ff-body);
-  font-weight: var(--fw-bold);
   font-size: var(--fs-copyright);
   text-align: left;
-  margin-top: -1rem;
-  padding-bottom: 1rem;
+  margin-bottom: -1.5rem;
 }
 
-@media screen and (min-width: 440px) {
+@media (width > 500px) {
   .main_container {
     margin: 3rem;
     margin-bottom: 0;
     justify-content: center;
+    padding-left: 5rem;
   }
+
   .divisor {
-    width: 60%;
+    height: 0.5rem;
   }
   .divisor:first-of-type {
-    width: 90%;
+    width: 80%;
   }
   .divisor:last-of-type {
-    width: 30%;
+    width: 40%;
   }
 }
 
-@media screen and (min-width: 1500px) {
+@media (width > 1500px) {
+  .footer {
+    padding: 2.5rem 0.5rem 2.5rem;
+  }
   .heading {
     margin-bottom: 3rem;
   }
-
   .text {
     line-height: 2;
-  }
-  .copyright {
-    padding-bottom: 3rem;
   }
 }

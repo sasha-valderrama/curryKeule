@@ -5,9 +5,9 @@ export default function Main() {
   return (
     <main className={MainCSS.main}>
       <div className={MainCSS.container}>
-        <p>Pass ma uff!</p>
+        <p>Dit war'n Hamma!</p>
         <h1 className={MainCSS.heading}>
-          Dein bester Keule im juten alten Wedding
+          Bester Currywust im juten alten Wedding
         </h1>
         <Button_Principal text="Wat jibts heude?" />
       </div>

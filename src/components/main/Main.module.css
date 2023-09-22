@@ -19,12 +19,19 @@
   font-size: var(--fs-heading1);
   margin-bottom: 2rem;
   color: var(--color-white);
-  text-shadow: -3px -3px 0 var(--color-red), 3px -3px 0 var(--color-red),
-    -3px 3px 0 var(--color-red), 3px 3px 0 var(--color-red);
-  line-height: 1.2;
+   text-shadow:  
+   -10px -10px 20px rgba(163, 0, 0,0.6),
+   10px 0px 20px rgba(255, 43, 43,0.6),
+   -10px 10px 20px rgba(255, 0, 0,0.6),
+   10px 10px 20px rgba(179, 0, 0,0.6),
+   -3px -3px 5px var(--color-red),
+    3px -3px 5px var(--color-red),
+   -3px 3px 5px var(--color-red),
+   3px 3px 5px var(--color-red);
+  line-height: 0.95;
 }
 
-@media screen and (min-width: 450px) {
+@media (min-width: 450px) {
   .main {
     background-image: url(../../assets/images/bg__main.jpg);
     background-position: bottom center;
