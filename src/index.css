@@ -130,21 +130,30 @@ table {
 
 @font-face {
   font-family: 'PaytoneOne';
-  src: url(./assets/fonts/PaytoneOne/PaytoneOne-Regular.ttf) format('ttf');
+  src: url(./assets/fonts/PaytoneOne/PaytoneOne-Regular.woff) format('woff');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'Roboto';
-  src: url(../assets/fonts/Roboto/Roboto-Regular.ttf) format('ttf');
+  src: url(./assets/fonts/Roboto/Roboto-Regular.woff) format('woff');
   font-weight: 400;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto/Roboto-Bold.woff) format('woff');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url(./assets/fonts/Roboto/Roboto-Black.woff) format('woff');
+  font-weight: 900;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   /*CSS VARIABLES*/
   --color-red: #ff0303;
   --color-white: white;
@@ -153,7 +162,11 @@ table {
   --fs-md: 1rem /*16px*/;
   --fs-sm: 0.87rem /*14px*/;
   --fs-xs: 0.62rem /*10px*/;
+  --fs-copyright: 0.5rem /*8px*/;
   --fs-section-title: var(--fs-xl) /*40px*/;
   --fs-copyright: var(--fs-xs) /*12*/;
   --ff-body: 'Roboto';
+  --ff-heading: 'PaytoneOne';
+  --fw-bold: 700;
+  --fw-black: 900;
 }

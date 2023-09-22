@@ -10,35 +10,47 @@ export default function Footer() {
           <h3 className={FooterCSS.subheading}>Wann?</h3>
           <table className={FooterCSS.schedule}>
             <tr>
-              <td>Mo-Fr</td>
-              <td>10:00 - 22:00 Uhr</td>
+              <td>
+                <p className={FooterCSS.text}>Mo-Fr</p>
+              </td>
+              <td>
+                <p className={FooterCSS.text}>10:00 - 22:00 Uhr</p>
+              </td>
             </tr>
             <tr>
-              <td>Sa</td>
-              <td>11:00 - 22:00 Uhr</td>
+              <td>
+                <p className={FooterCSS.text}>Sa</p>
+              </td>
+              <td>
+                <p className={FooterCSS.text}>11:00 - 22:00 Uhr</p>
+              </td>
             </tr>
             <tr>
-              <td>So</td>
-              <td>geschlossen</td>
+              <td>
+                <p className={FooterCSS.text}>So</p>
+              </td>
+              <td>
+                <p className={FooterCSS.text}>geschlossen</p>
+              </td>
             </tr>
           </table>
         </div>
         <div className={FooterCSS.container}>
           <h3 className={FooterCSS.subheading}>Wo?</h3>
-          <p>Müllerstraße 47A, 13349 Berlin</p>
+          <p className={FooterCSS.text}>Müllerstraße 47A, 13349 Berlin</p>
         </div>
         <div className={FooterCSS.divisor}></div>
         <div className={FooterCSS.container}>
           <h4 className={FooterCSS.subheading}>Pass ma uff, Keule!</h4>
           <ul>
             <li>
-              <p>Kontakt</p>
+              <p className={FooterCSS.text}>Kontakt</p>
             </li>
             <li>
-              <p>Impressum</p>
+              <p className={FooterCSS.text}>Impressum</p>
             </li>
             <li>
-              <p>Datenschutz</p>
+              <p className={FooterCSS.text}>Datenschutz</p>
             </li>
           </ul>
           <img
