@@ -61,6 +61,7 @@
 }
 
 .schedule {
+  max-width: 1000px;
   text-align: left;
   font-size: var(--fs-md);
   font-family: var(--ff-body);
@@ -73,7 +74,7 @@
 .logo {
   position: absolute;
   width: 25%;
-  max-width: 270px;
+  max-width: 310px;
   height: auto;
   right: 1%;
   bottom: 1%;
