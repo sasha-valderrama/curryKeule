@@ -1,6 +1,7 @@
 import Footer from './components/footer'
 import Header from './components/header'
-import Main from './components/main/Main'
+import Main from './components/main'
+
 import Section from './components/ui/sections/Section'
 
 function App() {

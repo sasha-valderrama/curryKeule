@@ -1,0 +1,18 @@
+button {
+  border: 2.733px solid #fcb706;
+  box-shadow: 0px 0px 9.10959px 0px rgba(255, 174, 3, 0.6);
+  font-family: var(--ff-button);
+  font-size: var(--fs-button);
+  border-radius: 15px;
+  padding: 0.7rem 1rem;
+}
+
+.primary {
+  background: #261e61;
+  color: #fcb706;
+}
+
+.secondary {
+  background: #ffae03;
+  color: #261e61;
+}

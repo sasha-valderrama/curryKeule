@@ -1,8 +1,8 @@
 .main {
-  height: 100vh;
-  background-image: url(../../assets/images/bg__main.jpg);
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  background-image: url(../../assets/images/bg__main.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,27 +13,47 @@
   margin-left: 2rem;
 }
 
+.heading,
+.preHeading {
+  font-family: var(--ff-heading);
+  color: var(--color-white);
+}
+
+.preHeading {
+  font-family: var(--ff-preHeading);
+}
+
 .heading {
   max-width: 75%;
-  font-family: var(--ff-heading);
   font-size: var(--fs-heading1);
-  margin-bottom: 2rem;
-  color: var(--color-white);
-   text-shadow:  
-   -10px -10px 20px rgba(163, 0, 0,0.6),
-   10px 0px 20px rgba(255, 43, 43,0.6),
-   -10px 10px 20px rgba(255, 0, 0,0.6),
-   10px 10px 20px rgba(179, 0, 0,0.6),
-   -3px -3px 5px var(--color-red),
-    3px -3px 5px var(--color-red),
-   -3px 3px 5px var(--color-red),
-   3px 3px 5px var(--color-red);
+  text-shadow: -10px -10px 20px rgba(163, 0, 0, 0.6),
+    10px 0px 20px rgba(255, 43, 43, 0.6), -10px 10px 20px rgba(255, 0, 0, 0.6),
+    10px 10px 20px rgba(179, 0, 0, 0.6), -3px -3px 5px var(--color-red),
+    3px -3px 5px var(--color-red), -3px 3px 5px var(--color-red),
+    3px 3px 5px var(--color-red);
   line-height: 0.95;
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.preHeading {
+  font-size: var(--fs-heading4);
+  text-shadow: 3px -3px 5px var(--color-red), -3px 3px 5px var(--color-red),
+    3px 3px 5px var(--color-red);
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
 }
 
 @media (min-width: 450px) {
   .main {
     background-image: url(../../assets/images/bg__main.jpg);
     background-position: bottom center;
+  }
+  .buttons {
+    display: flex;
+    gap: 2rem;
   }
 }

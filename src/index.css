@@ -150,6 +150,12 @@ table {
   font-weight: 900;
 }
 
+@font-face {
+  font-family: 'Nerko One';
+  src: url(./assets/fonts/NerkoOne/NerkoOne_Regular.woff) format('woff');
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -174,9 +180,12 @@ table {
   --fs-heading4: var(--fs-lg);
   --fs-body: var(--fs-md);
   --fs-body-small: var(--fs-sm);
+  --fs-button: var(--fs-md);
   --fs-copyright: var(--fs-xxs);
-  --ff-body: 'Roboto';
   --ff-heading: 'PaytoneOne';
+  --ff-preHeading: 'Nerko One';
+  --ff-body: 'Roboto';
+  --ff-button: 'Nerko One';
   --fw-bold: 700;
   --fw-black: 900;
   --bp-phones: 600px;
