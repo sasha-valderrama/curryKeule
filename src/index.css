@@ -180,36 +180,42 @@ table {
   --fs-heading4: var(--fs-lg);
   --fs-body: var(--fs-md);
   --fs-body-small: var(--fs-sm);
-  --fs-button: var(--fs-md);
+  --fs-button: var(--fs-sm);
   --fs-copyright: var(--fs-xxs);
   --ff-heading: 'PaytoneOne';
   --ff-preHeading: 'Nerko One';
   --ff-body: 'Roboto';
-  --ff-button: 'Nerko One';
+  --ff-button: 'Roboto';
   --fw-bold: 700;
   --fw-black: 900;
   --bp-phones: 600px;
   --bp-tablet: 768px;
   --bp-laptops: 992px;
   --bp-large: 1200px;
+  --typography-factor-md: 1.25;
+  --typography-factor-lg: 1.6;
 }
-/* @media (width < 600px) {
-  :root {
-    --fs-xxl: 6rem;
-    --fs-xl: 4rem;
-    --fs-lg: 2rem;
-    --fs-xxs: 0.8rem;
-  }
-} */
 
-@media (width > 850px) {
+@media (width > 400px) {
   :root {
-    --fs-xxl: 6rem;
-    --fs-xl: 4rem;
-    --fs-lg: 2rem;
-    --fs-md: 1.2rem;
-    --fs-sm: 1rem;
-    --fs-xs: 0.75rem;
-    --fs-xxs: 0.6rem;
+    --fs-xxl: calc(3.75rem * var(--typography-factor-md));
+    --fs-xl: calc(2.5rem * var(--typography-factor-md));
+    --fs-lg: calc(1.25rem * var(--typography-factor-md));
+    --fs-md: calc(1rem * var(--typography-factor-md));
+    --fs-sm: calc(0.87rem * var(--typography-factor-md));
+    --fs-xs: calc(0.62rem * var(--typography-factor-md));
+    --fs-xxs: calc(0.5rem * var(--typography-factor-md));
+  }
+}
+
+@media (width > 1000px) {
+  :root {
+    --fs-xxl: calc(3.75rem * var(--typography-factor-lg));
+    --fs-xl: calc(2.5rem * var(--typography-factor-lg));
+    --fs-lg: calc(1.25rem * var(--typography-factor-lg));
+    --fs-md: calc(1rem * var(--typography-factor-lg));
+    --fs-sm: calc(0.87rem * var(--typography-factor-lg));
+    --fs-xs: calc(0.62rem * var(--typography-factor-lg));
+    --fs-xxs: calc(0.5rem * var(--typography-factor-lg));
   }
 }

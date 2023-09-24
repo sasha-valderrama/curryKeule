@@ -12,7 +12,7 @@ export default function Main() {
         </h1>
         <div className={MainCSS.buttons}>
           <Button_Secondary text="Speisekarte" />
-          <Button_Primary text="Wat jibts heude?" />
+          <Button_Primary text="Tageskarte" />
         </div>
       </div>
     </main>
