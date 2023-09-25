@@ -167,8 +167,8 @@ table {
   --color-red: #da0000;
   --color-white: #fff;
   --color-black: #000;
-  --color-purple:rgb(38, 30, 97);
-  --color-yellow:#ffae03;
+  --color-purple: rgb(38, 30, 97);
+  --color-yellow: #ffae03;
   --fs-xxl: 3.5rem; /*60px*/
   --fs-xl: 1.8rem; /*28.8px*/
   --fs-lg: 1.25rem; /*20px*/
@@ -200,24 +200,26 @@ table {
 
 @media (width > 400px) {
   :root {
-    --fs-xxl: calc(3.75rem * var(--typography-factor-md));
-    --fs-xl: calc(1.8rem * var(--typography-factor-md));
-    --fs-lg: calc(1.25rem * var(--typography-factor-md));
-    --fs-md: calc(1rem * var(--typography-factor-md));
-    --fs-sm: calc(0.87rem * var(--typography-factor-md));
-    --fs-xs: calc(0.62rem * var(--typography-factor-md));
-    --fs-xxs: calc(0.5rem * var(--typography-factor-md));
+    --fs-heading1: calc(var(--fs-xxl) * var(--typography-factor-md));
+    --fs-heading2: calc(var(--fs-xl) * var(--typography-factor-md));
+    --fs-heading3: calc(var(--fs-lg) * var(--typography-factor-md));
+    --fs-heading4: calc(var(--fs-lg) * var(--typography-factor-md));
+    --fs-body: calc(var(--fs-md) * var(--typography-factor-md));
+    --fs-body-small: calc(var(--fs-sm) * var(--typography-factor-md));
+    --fs-button: calc(var(--fs-sm) * var(--typography-factor-md));
+    --fs-copyright: calc(var(--fs-xxs) * var(--typography-factor-md));
   }
 }
 
 @media (width > 1300px) {
   :root {
-    --fs-xxl: calc(3.75rem * var(--typography-factor-lg));
-    --fs-xl: calc(1.8rem * var(--typography-factor-lg));
-    --fs-lg: calc(1.25rem * var(--typography-factor-lg));
-    --fs-md: calc(1rem * var(--typography-factor-lg));
-    --fs-sm: calc(0.87rem * var(--typography-factor-lg));
-    --fs-xs: calc(0.62rem * var(--typography-factor-lg));
-    --fs-xxs: calc(0.5rem * var(--typography-factor-lg));
+     --fs-heading1: calc(var(--fs-xxl) * var(--typography-factor-lg));
+    --fs-heading2: calc(var(--fs-xl) * var(--typography-factor-lg));
+    --fs-heading3: calc(var(--fs-lg) * var(--typography-factor-lg));
+    --fs-heading4: calc(var(--fs-lg) * var(--typography-factor-lg));
+    --fs-body: calc(var(--fs-md) * var(--typography-factor-lg));
+    --fs-body-small: calc(var(--fs-sm) * var(--typography-factor-lg));
+    --fs-button: calc(var(--fs-sm) * var(--typography-factor-lg));
+    --fs-copyright: calc(var(--fs-xxs) * var(--typography-factor-lg));
   }
 }
