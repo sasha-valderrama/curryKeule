@@ -35,11 +35,15 @@ export const bestseller = [
     id: 0,
     heading: 'Der beste Hamburger im ganzen Wedding  (versprochen!)',
     description: 'mit Bacon, Cheddar-Käse, Soße und Salat',
+    imgURL: '',
+    imgALT: '',
   },
   {
     id: 1,
     heading: 'Cevapcici nach -geheimer- hauseigener Rezept',
     description: '5 Stück mit Pommes und Djuvecreis',
+    imgURL: '',
+    imgALT: '',
   },
 ]
 
