@@ -6,7 +6,7 @@ import Sections from './components/sections'
 function App() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <LandingPage/>
       <Sections/>
       <Footer />

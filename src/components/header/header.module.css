@@ -1,36 +1,49 @@
 .header {
-  height: 3rem;
-  background-color: var(--color-white);
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  /* box-shadow: 0px 4px 10px 10px rgba(0, 0, 0, 0.65); */
-  position: relative;
-  z-index: 99;
+  position: fixed;
+  top: -200px; /* Initially, hide the header above the viewport */
+  left: 0;
+  right: 0;
+  transition: top 250ms ease-in-out;
 }
 
 .logo {
-  width: 1.8rem;
+  width: 3.2rem;
   height: auto;
 }
 
-@media screen and (min-width: 500px) {
+.nav ul {
+  display: none;
+}
+
+@media (width > 650px) {
   .header {
-    height: 3.5rem;
-    padding: 0.8rem;
+    flex-direction: row;
   }
   .logo {
-    width: 2rem;
+    width: 4rem;
     height: auto;
+  }
+
+  .nav ul {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    padding: 0.5rem;
+  }
+
+  .nav li {
+    color: var(--color-purple);
+    font-family: var(--ff-heading);
+    font-size: var(--fs-body);
   }
 }
 
 @media screen and (min-width: 1600px) {
-  .header {
-    height: 5rem;
-    padding: 0.8rem;
-  }
   .logo {
     width: 3rem;
     height: auto;

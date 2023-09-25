@@ -16,7 +16,7 @@ button {
 }
 
 .secondary {
-  background: #ffae03;
-  color: #261e61;
+  background: var(--color-yellow);
+  color: var(--color-purple);
   font-weight: var(--fw-bold);
 }
