@@ -1,0 +1,12 @@
+.imgDivisor {
+  max-width: 10rem;
+  width: 100vw;
+  height: auto;
+}
+
+@media (width > 600px) {
+  .imgDivisor {
+    max-width: 19rem;
+    width: 50vw;
+  }
+}

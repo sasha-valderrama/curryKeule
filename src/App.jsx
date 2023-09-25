@@ -1,17 +1,14 @@
 import Footer from './components/footer'
 import Header from './components/header'
 import LandingPage from './components/landingPage'
-import Main from './components/main'
-
-
-import Section from './components/ui/section/Section'
+import Sections from './components/sections'
 
 function App() {
   return (
     <>
       <Header />
       <LandingPage/>
-      <Main/>
+      <Sections/>
       <Footer />
     </>
   )
