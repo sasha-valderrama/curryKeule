@@ -167,8 +167,8 @@ table {
   --color-red: #da0000;
   --color-white: #fff;
   --color-black: #000;
-  --fs-xxl: 3.75rem; /*60px*/
-  --fs-xl: 2.5rem; /*40px*/
+  --fs-xxl: 3.5rem; /*60px*/
+  --fs-xl: 1.8rem; /*28.8px*/
   --fs-lg: 1.25rem; /*20px*/
   --fs-md: 1rem; /*16px*/
   --fs-sm: 0.87rem; /*14px*/
@@ -199,7 +199,7 @@ table {
 @media (width > 400px) {
   :root {
     --fs-xxl: calc(3.75rem * var(--typography-factor-md));
-    --fs-xl: calc(2.5rem * var(--typography-factor-md));
+    --fs-xl: calc(1.8rem * var(--typography-factor-md));
     --fs-lg: calc(1.25rem * var(--typography-factor-md));
     --fs-md: calc(1rem * var(--typography-factor-md));
     --fs-sm: calc(0.87rem * var(--typography-factor-md));
@@ -208,10 +208,10 @@ table {
   }
 }
 
-@media (width > 1000px) {
+@media (width > 1300px) {
   :root {
     --fs-xxl: calc(3.75rem * var(--typography-factor-lg));
-    --fs-xl: calc(2.5rem * var(--typography-factor-lg));
+    --fs-xl: calc(1.8rem * var(--typography-factor-lg));
     --fs-lg: calc(1.25rem * var(--typography-factor-lg));
     --fs-md: calc(1rem * var(--typography-factor-lg));
     --fs-sm: calc(0.87rem * var(--typography-factor-lg));

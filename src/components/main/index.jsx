@@ -1,20 +1,22 @@
-import Button_Primary from '../ui/buttons/Button_Primary'
-import Button_Secondary from '../ui/buttons/Button_Secondary'
+import Section from '../ui/section/Section'
 import MainCSS from './Main.module.css'
+
+
+const sections = []
+
 
 export default function Main() {
   return (
-    <main className={MainCSS.main}>
-      <div className={MainCSS.container}>
-        <p className={MainCSS.preHeading}>Dit is jejessen!</p>
-        <h1 className={MainCSS.heading}>
-          Bester Currywust im juten alten Wedding
-        </h1>
-        <div className={MainCSS.buttons}>
-          <Button_Secondary text="Speisekarte" />
-          <Button_Primary text="Tageskarte" />
-        </div>
-      </div>
+    <main>
+      <Section section="Speisen und Getränke">
+        <p>dfdfsfdsdfdfdsfdsfdsf</p>
+      </Section>
+      <Section section="Unsere Bestseller!">
+        <p>dfdsfdsfdsfdf</p>
+      </Section>
+      <Section section="Tageskarte">
+        <p>dfsdf</p>
+      </Section>
     </main>
   )
 }
