@@ -2,9 +2,29 @@ import { menu, sections } from '../../data'
 import Section from '../ui/section/Section'
 import SectionsCSS from './Sections.module.css'
 
-const test = menu[0].name
+const speisekarte = menu.map((item) => {
+  if (item.vegan) {
+    return (
+      <div key={item.id} className={SectionsCSS.article}>
+        <p className={`${SectionsCSS.text} ${SectionsCSS.vegan}`}>
+          {item.name}
+        </p>
+        <p className={`${SectionsCSS.text} ${SectionsCSS.vegan}`}>
+          {item.price}
+        </p>
+      </div>
+    )
+  } else {
+    return (
+      <div key={item.id} className={SectionsCSS.article}>
+        <p className={SectionsCSS.text}>{item.name}</p>
+        <p className={SectionsCSS.text}>{item.price}</p>
+      </div>
+    )
+  }
+})
 
-console.log(test)
+// console.log(test)
 
 export default function Sections() {
   return (
@@ -17,7 +37,9 @@ export default function Sections() {
             imgURL={item.imgURL}
             imgALT={item.imgALT}
           >
-            {item.id === 0 ? <p>Speisen und Getränke info</p> : null}
+            {item.id === 0 ? (
+              <div className={SectionsCSS.container}>{speisekarte}</div>
+            ) : null}
             {item.id === 1 ? <p>Bestseller info</p> : null}
             {item.id === 2 ? <p>Tageskarte info</p> : null}
           </Section>

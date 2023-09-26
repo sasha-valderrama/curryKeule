@@ -169,6 +169,7 @@ table {
   --color-black: #000;
   --color-purple: rgb(38, 30, 97);
   --color-yellow: #ffae03;
+  --color-green: #066004;
   --fs-xxl: 3.5rem; /*60px*/
   --fs-xl: 1.8rem; /*28.8px*/
   --fs-lg: 1.25rem; /*20px*/
@@ -213,7 +214,7 @@ table {
 
 @media (width > 1300px) {
   :root {
-     --fs-heading1: calc(var(--fs-xxl) * var(--typography-factor-lg));
+    --fs-heading1: calc(var(--fs-xxl) * var(--typography-factor-lg));
     --fs-heading2: calc(var(--fs-xl) * var(--typography-factor-lg));
     --fs-heading3: calc(var(--fs-lg) * var(--typography-factor-lg));
     --fs-heading4: calc(var(--fs-lg) * var(--typography-factor-lg));
