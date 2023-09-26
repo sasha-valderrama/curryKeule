@@ -7,8 +7,10 @@ const speisekarte = menu.map((item) => {
     return (
       <div key={item.id} className={SectionsCSS.article}>
         <p className={`${SectionsCSS.text} ${SectionsCSS.vegan}`}>
-          {item.name}
+          {item.name}{' '}
+          <span className={SectionsCSS.smallerText}>{item.extras}</span>
         </p>
+
         <p className={`${SectionsCSS.text} ${SectionsCSS.vegan}`}>
           {item.price}
         </p>
@@ -17,7 +19,10 @@ const speisekarte = menu.map((item) => {
   } else {
     return (
       <div key={item.id} className={SectionsCSS.article}>
-        <p className={SectionsCSS.text}>{item.name}</p>
+        <p className={SectionsCSS.text}>
+          {item.name}{' '}
+          <span className={SectionsCSS.smallerText}>{item.extras}</span>
+        </p>
         <p className={SectionsCSS.text}>{item.price}</p>
       </div>
     )

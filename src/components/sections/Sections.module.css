@@ -33,6 +33,10 @@
   /* align-self: start; */
 }
 
+.smallerText {
+  font-size: var(--fs-body-small);
+}
+
 .vegan {
   color: var(--color-green);
   font-weight: var(--fw-bold);
