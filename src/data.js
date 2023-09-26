@@ -24,9 +24,37 @@ export const menu = [
   {
     id: 0,
     name: 'Currywurst mit oder ohne Darm',
-    price: '2,30€',
+    price: '2,50€',
     vegan: false,
-    extras: null,
+    extras: [],
+  },
+  {
+    id: 1,
+    name: 'Currywurst mit Brötchen',
+    price: '2.70€',
+    vegan: false,
+    extras: [],
+  },
+  {
+    id: 2,
+    name: '2 Currywurst mit Pommes rot-weiß',
+    price: '7.50€',
+    vegan: false,
+    extras: [],
+  },
+  {
+    id: 3,
+    name: '1 Currywurst mit Pommes und Bouletle',
+    price: '7.50€',
+    vegan: false,
+    extras: [],
+  },
+  {
+    id: 4,
+    name: 'Currywurst Vegan ',
+    price: '3.00€',
+    vegan: true,
+    extras: [],
   },
 ]
 

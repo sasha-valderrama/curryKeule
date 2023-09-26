@@ -9,30 +9,32 @@ export default function Footer() {
         <div className={FooterCSS.container}>
           <h3 className={FooterCSS.heading2}>Wann?</h3>
           <table className={FooterCSS.schedule}>
-            <tr>
-              <td>
-                <p className={FooterCSS.text}>Mo-Fr</p>
-              </td>
-              <td>
-                <p className={FooterCSS.text}>10:00 - 22:00 Uhr</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p className={FooterCSS.text}>Sa</p>
-              </td>
-              <td>
-                <p className={FooterCSS.text}>11:00 - 22:00 Uhr</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p className={FooterCSS.text}>So</p>
-              </td>
-              <td>
-                <p className={FooterCSS.text}>geschlossen</p>
-              </td>
-            </tr>
+            <tbody>
+              <tr>
+                <td>
+                  <p className={FooterCSS.text}>Mo-Fr</p>
+                </td>
+                <td>
+                  <p className={FooterCSS.text}>10:00 - 22:00 Uhr</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p className={FooterCSS.text}>Sa</p>
+                </td>
+                <td>
+                  <p className={FooterCSS.text}>11:00 - 22:00 Uhr</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p className={FooterCSS.text}>So</p>
+                </td>
+                <td>
+                  <p className={FooterCSS.text}>geschlossen</p>
+                </td>
+              </tr>
+            </tbody>
           </table>
         </div>
         <div className={FooterCSS.container}>

@@ -1,6 +1,10 @@
-import { sections } from '../../data'
+import { menu, sections } from '../../data'
 import Section from '../ui/section/Section'
 import SectionsCSS from './Sections.module.css'
+
+const test = menu[0].name
+
+console.log(test)
 
 export default function Sections() {
   return (
