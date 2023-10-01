@@ -164,6 +164,7 @@ table {
 
 :root {
   /*CSS VARIABLES*/
+  --color-bright-red: #ff1717;
   --color-red: #da0000;
   --color-white: #fff;
   --color-black: #000;

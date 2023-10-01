@@ -30,6 +30,17 @@
   height: auto;
 }
 
+.sectionBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  flex-wrap: wrap;
+  gap:2rem;
+  margin-top: 4rem;
+}
+
 @media (width > 600px) {
   .imgDivisor {
     max-width: 19rem;
