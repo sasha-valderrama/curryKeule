@@ -2,7 +2,7 @@ export const sections = [
   {
     id: 0,
     heading: 'Speisen und Getränke',
-    imgURL: './src/assets/images/bg__cola.jpg',
+    imgURL: `${import.meta.env.BASE_URL}assets/images/bg__cola.jpg`,
     imgALT: 'Bild von Coca-Cola',
   },
   {
