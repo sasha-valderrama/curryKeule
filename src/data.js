@@ -2,20 +2,20 @@ export const sections = [
   {
     id: 0,
     heading: 'Speisen und Getränke',
-    imgURL: `${import.meta.env.BASE_URL}assets/images/bg__cola.jpg`,
+    imgURL: '/assets/images/bg__cola.jpg',
     imgALT: 'Bild von Coca-Cola',
   },
   {
     id: 1,
     heading: 'Unsere Bestseller!',
-    imgURL: './src/assets/images/bg__burger.png',
+    imgURL: '/assets/images/bg__burger.png',
     imgALT: 'Bild von Burger',
   },
   ,
   {
     id: 2,
     heading: 'Tageskarte',
-    imgURL: './src/assets/images/bg__pommes.jpg',
+    imgURL: '/assets/images/bg__pommes.jpg',
     imgALT: 'Bild von Pommes',
   },
 ]
