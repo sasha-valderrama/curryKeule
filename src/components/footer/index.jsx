@@ -61,7 +61,7 @@ export default function Footer() {
           </ul>
           <img
             className={FooterCSS.logo}
-            src= './src/assets/images/logo.png'
+            src={import.meta.env.BASE_URL + 'assets/images/logo.png'}
             alt="logo"
           ></img>
         </div>

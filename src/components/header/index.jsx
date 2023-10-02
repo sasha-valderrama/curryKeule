@@ -21,7 +21,7 @@ export default function Header() {
     <header id="header" className={HeaderCSS.header}>
       <img
         className={HeaderCSS.logo}
-        src='./src/assets/images/logo.png'
+        src= {import.meta.env.BASE_URL + 'assets/images/logo.png'}
       />
       <nav className={HeaderCSS.nav}>
         <ul>
