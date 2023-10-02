@@ -19,7 +19,10 @@ window.addEventListener('scroll', function () {
 export default function Header() {
   return (
     <header id="header" className={HeaderCSS.header}>
-      <img className={HeaderCSS.logo} src="./src/assets/images/logo.png" />
+      <img
+        className={HeaderCSS.logo}
+        src={import.meta.env.BASE_URL + 'src/assets/images/logo.png'}
+      />
       <nav className={HeaderCSS.nav}>
         <ul>
           <li>Unsere Bestseller</li>
