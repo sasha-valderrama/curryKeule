@@ -56,11 +56,11 @@ export default function Sections() {
             imgURL={item.imgURL}
             imgALT={item.imgALT}
           >
-            {item.id === 0 ? (
+            {item.order === 0 ? (
               <div className={SectionsCSS.container}>{speisekarte}</div>
             ) : null}
-            {item.id === 1 ? bestsellerCards : null}
-            {item.id === 2 ? <p>Tageskarte info</p> : null}
+            {item.order === 1 ? bestsellerCards : null}
+            {item.order === 2 ? <p>Tageskarte info</p> : null}
           </Section>
         )
       })}
