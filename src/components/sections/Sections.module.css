@@ -11,11 +11,6 @@
   }
 } */
 
-.container {
-  background-color: rgb(207, 207, 252);
-  width: 100%;
-}
-
 .article {
   /* padding: 1rem; */
   /* width: 100%; */
@@ -42,3 +37,8 @@
   font-weight: var(--fw-bold);
 }
 
+.sectionDivision {
+  width: 100%;
+  background-color: rgb(207, 207, 252);
+  margin-bottom: 3rem;
+}

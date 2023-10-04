@@ -3,28 +3,38 @@ import BestsellerCard from '../ui/cards/BestsellerCard'
 import Section from '../ui/section/Section'
 import SectionsCSS from './Sections.module.css'
 
-const speisekarte = menu.map((item) => {
-  if (item.vegan) {
+const speisekarte = menu.map((section) => {
+  if (section.name === 'Speisen' || section.name === 'Beilagen') {
     return (
-      <div key={item.id} className={SectionsCSS.article}>
-        <p className={`${SectionsCSS.text} ${SectionsCSS.vegan}`}>
-          {item.name}{' '}
-          <span className={SectionsCSS.smallerText}>{item.extras}</span>
-        </p>
+      <div key={section.name} className={SectionsCSS.sectionDivision}>
+        {section.products.map((product) => {
+          return (
+            <div key={product.id} className={SectionsCSS.article}>
+              <p
+                className={
+                  product.vegan
+                    ? `${SectionsCSS.text} ${SectionsCSS.vegan}`
+                    : SectionsCSS.text
+                }
+              >
+                {product.name}{' '}
+                <span className={SectionsCSS.smallerText}>
+                  {product.extras}
+                </span>
+              </p>
 
-        <p className={`${SectionsCSS.text} ${SectionsCSS.vegan}`}>
-          {item.price}
-        </p>
-      </div>
-    )
-  } else {
-    return (
-      <div key={item.id} className={SectionsCSS.article}>
-        <p className={SectionsCSS.text}>
-          {item.name}{' '}
-          <span className={SectionsCSS.smallerText}>{item.extras}</span>
-        </p>
-        <p className={SectionsCSS.text}>{item.price}</p>
+              <p
+                className={
+                  product.vegan
+                    ? `${SectionsCSS.text} ${SectionsCSS.vegan}`
+                    : SectionsCSS.text
+                }
+              >
+                {product.price}
+              </p>
+            </div>
+          )
+        })}
       </div>
     )
   }
@@ -43,8 +53,6 @@ const bestsellerCards = bestseller.map((item) => {
   )
 })
 
-// console.log(test)
-
 export default function Sections() {
   return (
     <>
@@ -56,9 +64,7 @@ export default function Sections() {
             imgURL={item.imgURL}
             imgALT={item.imgALT}
           >
-            {item.order === 0 ? (
-              <div className={SectionsCSS.container}>{speisekarte}</div>
-            ) : null}
+            {item.order === 0 ? speisekarte : null}
             {item.order === 1 ? bestsellerCards : null}
             {item.order === 2 ? <p>Tageskarte info</p> : null}
           </Section>

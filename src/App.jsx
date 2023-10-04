@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       {/* <Header /> */}
-      <LandingPage/>
-      <Sections/>
+      <LandingPage />
+      <Sections />
       <Footer />
     </>
   )
