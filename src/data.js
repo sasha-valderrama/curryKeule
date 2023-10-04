@@ -35,6 +35,7 @@ export const menu = [
         price: '2,50€',
         vegan: false,
         extras: '',
+        note: 'I-J-10-2-4',
       },
       {
         id: nanoid(),
@@ -42,6 +43,7 @@ export const menu = [
         price: '2.70€',
         vegan: false,
         extras: '',
+        note: 'A-C-I-J-10-2-4',
       },
       {
         id: nanoid(),
@@ -49,6 +51,7 @@ export const menu = [
         price: '7.50€',
         vegan: false,
         extras: 'rot-weiß',
+        note: 'I-J-10-2',
       },
       {
         id: nanoid(),
@@ -56,6 +59,7 @@ export const menu = [
         price: '7.50€',
         vegan: false,
         extras: '',
+        note: 'F-A A-I-J-10-2',
       },
       {
         id: nanoid(),
@@ -63,6 +67,7 @@ export const menu = [
         price: '3.00€',
         vegan: true,
         extras: '',
+        note: '2-4-A',
       },
       {
         id: nanoid(),
@@ -70,6 +75,7 @@ export const menu = [
         price: '3.00€',
         vegan: false,
         extras: '',
+        note: 'A-C',
       },
       {
         id: nanoid(),
@@ -77,6 +83,7 @@ export const menu = [
         price: '2.50€',
         vegan: false,
         extras: '',
+        note: '2-A',
       },
       {
         id: nanoid(),
@@ -84,6 +91,7 @@ export const menu = [
         price: '8.00€',
         vegan: false,
         extras: '(frisch geklopt)',
+        note: 'A-C',
       },
       {
         id: nanoid(),
@@ -91,6 +99,7 @@ export const menu = [
         price: '9.50€',
         vegan: false,
         extras: '(frisch geklopft)',
+        note: 'I-J-A-G-C-1-3',
       },
       {
         id: nanoid(),
@@ -105,6 +114,7 @@ export const menu = [
         price: '5.00€',
         vegan: false,
         extras: 'mit Soße und Salat',
+        note: 'G-1',
       },
       {
         id: nanoid(),
@@ -115,14 +125,14 @@ export const menu = [
       },
       {
         id: nanoid(),
-        name: 'Bacon',
+        name: '+ Bacon',
         price: '1.20€',
         vegan: false,
         extras: '',
       },
       {
         id: nanoid(),
-        name: 'Cheddar-Käse',
+        name: '+ Cheddar-Käse',
         price: '1.00€',
         vegan: false,
         extras: '',
@@ -154,6 +164,7 @@ export const menu = [
         price: '9.00€',
         vegan: false,
         extras: 'mit Pommes oder Djuvecreis',
+        note: 'I-1-4',
       },
       {
         id: nanoid(),
@@ -161,6 +172,7 @@ export const menu = [
         price: '12.50€',
         vegan: false,
         extras: 'mit Pommes oder Djuvecreis',
+        note: 'I-1-4',
       },
     ],
   },
@@ -213,6 +225,7 @@ export const menu = [
         price: '2.80€',
         vegan: false,
         extras: '',
+        note: 'J-8',
       },
       {
         id: nanoid(),
@@ -220,6 +233,7 @@ export const menu = [
         price: '3.50€',
         vegan: false,
         extras: '',
+        note: 'J-8',
       },
       {
         id: nanoid(),
@@ -227,6 +241,7 @@ export const menu = [
         price: '3.50€',
         vegan: false,
         extras: '',
+        note: 'A',
       },
       {
         id: nanoid(),
@@ -287,36 +302,42 @@ export const menu = [
         name: 'Coca Cola',
         price: '2.40€',
         size: '0,33l',
+        note: '1-8-11-A',
       },
       {
         id: nanoid(),
         name: 'Coca Zero',
         price: '2.40€',
         size: '0,33l',
+        note: '1-8-11-A',
       },
       {
         id: nanoid(),
         name: 'Fanta',
         price: '2.40€',
         size: '0,33l',
+        note: '1-3-8-14',
       },
       {
         id: nanoid(),
         name: 'Sprite',
         price: '2.40€',
         size: '0,33l',
+        note: '8',
       },
       {
         id: nanoid(),
         name: 'Capri Sonne',
         price: '1.00€',
         size: '0,20l',
+        note: '1',
       },
       {
         id: nanoid(),
         name: 'Multivitamin',
         price: '2.40€',
         size: '0,33l',
+        note: '1',
       },
       {
         id: nanoid(),
@@ -329,6 +350,7 @@ export const menu = [
         name: 'Rubin',
         price: '2.40€',
         size: '0,33l',
+        note: '1',
       },
       {
         id: nanoid(),
@@ -341,12 +363,14 @@ export const menu = [
         name: 'Kakao/Vanille',
         price: '2,50€',
         size: '0,50l',
+        note: '1-G',
       },
       {
         id: nanoid(),
         name: 'Kaffee',
         price: '2,00€',
         size: '',
+        note: '11',
       },
       {
         id: nanoid(),
@@ -371,6 +395,7 @@ export const menu = [
         name: 'Kraftmalz',
         price: '2,30€',
         size: '0,33l',
+        note: 'A',
       },
     ],
   },
@@ -382,24 +407,28 @@ export const menu = [
         name: 'Berliner Jubiläums Pils',
         price: '2,20€',
         size: '0,33l',
+        note: 'A',
       },
       {
         id: nanoid(),
         name: 'Schultheiss',
         price: '2.20€',
         size: '0,33l',
+        note: 'A',
       },
       {
         id: nanoid(),
         name: 'Berliner Kindl Radler',
         price: '2.80€',
         size: '0,50l',
+        note: 'A',
       },
       {
         id: nanoid(),
         name: 'Helles Bier',
         price: '2.80€',
         size: '0,50l',
+        note: 'A',
       },
       {
         id: nanoid(),
@@ -412,6 +441,81 @@ export const menu = [
         name: 'Rose Trocken',
         price: '4,00€',
         size: '0,25l',
+      },
+    ],
+  },
+  {
+    name: 'Allergene',
+    items: [
+      {
+        id: nanoid(),
+        name: 'A',
+        description: 'Glutenhaltige Getreide',
+      },
+      {
+        id: nanoid(),
+        name: 'C',
+        description: 'enthält Ei',
+      },
+      {
+        id: nanoid(),
+        name: 'F',
+        description: 'enthält Soja',
+      },
+      {
+        id: nanoid(),
+        name: 'G',
+        description: 'Milch',
+      },
+      {
+        id: nanoid(),
+        name: 'I',
+        description: 'enthält Sellerie',
+      },
+      {
+        id: nanoid(),
+        name: 'J',
+        description: 'enthält Senf',
+      },
+      {
+        id: nanoid(),
+        name: '1',
+        description: 'mit Farbstoff',
+      },
+      {
+        id: nanoid(),
+        name: '2',
+        description: 'mit Konservierungsstoffe',
+      },
+      {
+        id: nanoid(),
+        name: '3',
+        description: 'mit Antioxidionsmittel',
+      },
+      {
+        id: nanoid(),
+        name: '4',
+        description: 'mit Geschmacksverstäerker',
+      },
+      {
+        id: nanoid(),
+        name: '8',
+        description: 'Zuckerart undSüßungsmittel',
+      },
+      {
+        id: nanoid(),
+        name: '10',
+        description: 'mit Phosphat',
+      },
+      {
+        id: nanoid(),
+        name: '11',
+        description: 'mit Koffein',
+      },
+      {
+        id: nanoid(),
+        name: '14',
+        description: 'mit Stabilisatoren',
       },
     ],
   },
