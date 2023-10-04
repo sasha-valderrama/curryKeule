@@ -279,7 +279,142 @@ export const menu = [
       },
     ],
   },
-  { name: 'Getränke', items: [] },
+  {
+    name: 'Alkoholfreie Getränke',
+    items: [
+      {
+        id: nanoid(),
+        name: 'Coca Cola',
+        price: '2.40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Coca Zero',
+        price: '2.40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Fanta',
+        price: '2.40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Sprite',
+        price: '2.40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Capri Sonne',
+        price: '1.00€',
+        size: '0,20l',
+      },
+      {
+        id: nanoid(),
+        name: 'Multivitamin',
+        price: '2.40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Apfelschorle',
+        price: '2,40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Rubin',
+        price: '2.40€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Mineralwasser',
+        price: '2,00€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Kakao/Vanille',
+        price: '2,50€',
+        size: '0,50l',
+      },
+      {
+        id: nanoid(),
+        name: 'Kaffee',
+        price: '2,00€',
+        size: '',
+      },
+      {
+        id: nanoid(),
+        name: 'Alkoholfreies Bier',
+        price: '2,30€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Rixdorfer Fassbrause',
+        price: '2,00€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Radler alkoholfrei',
+        price: '2,50€',
+        size: '0,50l',
+      },
+      {
+        id: nanoid(),
+        name: 'Kraftmalz',
+        price: '2,30€',
+        size: '0,33l',
+      },
+    ],
+  },
+  {
+    name: 'Alkoholhaltige Getränke',
+    items: [
+      {
+        id: nanoid(),
+        name: 'Berliner Jubiläums Pils',
+        price: '2,20€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Schultheiss',
+        price: '2.20€',
+        size: '0,33l',
+      },
+      {
+        id: nanoid(),
+        name: 'Berliner Kindl Radler',
+        price: '2.80€',
+        size: '0,50l',
+      },
+      {
+        id: nanoid(),
+        name: 'Helles Bier',
+        price: '2.80€',
+        size: '0,50l',
+      },
+      {
+        id: nanoid(),
+        name: 'Weißwein Trocken',
+        price: '4,00€',
+        size: '0,25l',
+      },
+      {
+        id: nanoid(),
+        name: 'Rose Trocken',
+        price: '4,00€',
+        size: '0,25l',
+      },
+    ],
+  },
 ]
 
 export const bestseller = [
