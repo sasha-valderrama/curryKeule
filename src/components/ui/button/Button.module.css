@@ -1,5 +1,4 @@
 button {
-  /* border: 2px solid #fcb706; */
   border: none;
   box-shadow: 0px 0px 9.10959px 0px rgba(255, 174, 3, 0.6);
   font-family: var(--ff-button);
@@ -7,7 +6,7 @@ button {
   font-weight: var(--fw-black);
   border-radius: 10px;
   padding: 0.7em 1em;
-  /* min-width: 180px; */
+  cursor: pointer;
 }
 
 .primary {
