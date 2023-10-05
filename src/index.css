@@ -189,6 +189,7 @@ table {
   --fs-heading2: var(--fs-xl);
   --fs-heading3: var(--fs-lg);
   --fs-heading4: var(--fs-lg);
+  --fs-body-lg: var(--fs-lg);
   --fs-body: var(--fs-md);
   --fs-body-small: var(--fs-sm);
   --fs-button: var(--fs-sm);

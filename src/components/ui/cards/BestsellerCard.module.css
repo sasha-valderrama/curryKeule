@@ -4,7 +4,7 @@
   background-color: var(--color-white);
   position: relative;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
-  padding: 2rem 2rem 4rem;
+  padding: 2rem 1rem 4rem;
   border-radius: 10px;
   margin: 1rem;
   margin-top: 10rem;
@@ -20,9 +20,10 @@
 
 .heading {
   padding-top: 3.5rem;
-  font-family: var(--ff-heading);
-  font-size: var(--fs-body);
+  font-family: var(--ff-sectionHeading);
+  font-size: var(--fs-body-lg);
   color: var(--color-bright-red);
+  -webkit-text-stroke: 1px var(--color-white);
 }
 
 .description {
@@ -42,14 +43,42 @@
 
 .price {
   font-family: var(--ff-body);
-  font-size: var(--fs-body-small);
+  font-size: var(--fs-body-lg);
   font-weight: var(--fw-black);
   align-self: flex-end;
-  background-color: var(--color-yellow);
-  padding: 0.5em 1em;
+  padding: 0.5em 0.8em;
   border-radius: 10px;
   color: var(--color-purple);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  background-image: linear-gradient(
+    to right bottom,
+    #fdd721,
+    #fdd61d,
+    #fdd518,
+    #fed413,
+    #fed30c,
+    #fdd208,
+    #fcd004,
+    #fbcf00,
+    #f8cd00,
+    #f5ca00,
+    #f3c800,
+    #f0c600
+  );
+  transform: scale(1.5) translate(-20px, 10px) rotate(7deg);
+  position: relative;
+}
+
+.price::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 4px 4px 10px rgba(117, 116, 116, 0.25) inset;
+  transform: translateX(60%) translateY(60%);
 }
 
 @media (width > 900px) {
