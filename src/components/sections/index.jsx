@@ -4,7 +4,6 @@ import BestsellerCard from '../ui/cards/BestsellerCard'
 import Menu from '../ui/menu'
 import Section from '../ui/section'
 
-
 const bestsellerCards = bestseller.map((item) => {
   return (
     <BestsellerCard
@@ -25,13 +24,14 @@ export default function Sections() {
         return (
           <Section
             key={item.id}
+            id={item.function}
             section={item.heading}
             imgURL={item.imgURL}
             imgALT={item.imgALT}
           >
-            {item.order === 0 ? <Menu /> : null}
-            {item.order === 1 ? bestsellerCards : null}
-            {item.order === 2 ? <p>Kommt bald ...</p> : null}
+            {item.function === 'Speisekarte' ? <Menu /> : null}
+            {item.function === 'Bestseller' ? bestsellerCards : null}
+            {item.function === 'Tageskarte' ? <p>Kommt bald ...</p> : null}
           </Section>
         )
       })}

@@ -70,5 +70,9 @@ const speisekarte = menu.map((section) => {
 })
 
 export default function Menu() {
-  return <div className={MenuCSS.menu_container}>{speisekarte}</div>
+  return (
+    <div className={MenuCSS.menu_container}>
+      {speisekarte}
+    </div>
+  )
 }

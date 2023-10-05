@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Header from '../header'
 import Button_Primary from '../ui/buttons/Button_Primary'
 import Button_Secondary from '../ui/buttons/Button_Secondary'
@@ -14,7 +15,7 @@ export default function LandingPage() {
             Bester Currywust im juten alten Wedding
           </h1>
           <div className={LandingPageCSS.buttons}>
-            <Button_Secondary text="Speisekarte" />
+            <Button_Secondary text="Speisekarte"  />
             <Button_Primary text="Tageskarte" />
           </div>
         </div>

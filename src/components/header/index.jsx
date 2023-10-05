@@ -21,13 +21,19 @@ export default function Header() {
     <header id="header" className={HeaderCSS.header}>
       <img
         className={HeaderCSS.logo}
-        src= {import.meta.env.BASE_URL + 'assets/images/logo.png'}
+        src={import.meta.env.BASE_URL + 'assets/images/logo.png'}
       />
       <nav className={HeaderCSS.nav}>
         <ul>
-          <li>Unsere Bestseller</li>
-          <li>Tageskarte</li>
-          <li>Speisekarte</li>
+          <li>
+            <a href="#Bestseller">Unsre Bestseller</a>
+          </li>
+          <li>
+            <a href="#Tageskarte">Tageskarte</a>
+          </li>
+          <li>
+            <a href="#Speisekarte">Speisekarte</a>
+          </li>
           <li>Kontakt</li>
         </ul>
       </nav>

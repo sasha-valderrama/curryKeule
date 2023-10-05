@@ -6,6 +6,7 @@
   padding: 0.5rem;
   position: fixed;
   top: -200px; /* Initially, hide the header above the viewport */
+  z-index: 999;
   left: 0;
   right: 0;
   transition: top 250ms ease-in-out;
