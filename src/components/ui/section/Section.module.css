@@ -31,6 +31,7 @@
   margin-top: 6rem;
   margin-bottom: 6rem;
   max-width: 20rem;
+  /* width: 100%; */
 }
 
 .sectionBody {
@@ -41,7 +42,8 @@
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  gap: 3rem; /*Important for the cards*/
+  gap: 3rem;
+  /* Important for the cards */
   /* outline: 1px solid blue; */
 }
 

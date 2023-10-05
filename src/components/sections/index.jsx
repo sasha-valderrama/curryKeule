@@ -1,75 +1,8 @@
 import { bestseller } from '../../data/bestseller'
-import { menu } from '../../data/menu'
 import { sections } from '../../data/sections'
 import BestsellerCard from '../ui/cards/BestsellerCard'
+import Menu from '../ui/menu'
 import Section from '../ui/section/Section'
-import SectionsCSS from './Sections.module.css'
-
-const speisekarte = menu.map((section) => {
-  if (section.name === 'Speisen' || section.name === 'Beilagen') {
-    return (
-      <div key={section.name} className={SectionsCSS.menuDivision}>
-        <p className={SectionsCSS.menuHeading}>
-          {section.name === 'Beilagen' ? section.name : null}
-        </p>
-        {section.products.map((product) => {
-          return (
-            <div key={product.id} className={SectionsCSS.article}>
-              <p
-                className={
-                  product.vegan
-                    ? `${SectionsCSS.text} ${SectionsCSS.vegan}`
-                    : SectionsCSS.text
-                }
-              >
-                {product.name}{' '}
-                <span className={SectionsCSS.smallerText}>
-                  {product.extras}
-                </span>
-              </p>
-
-              <p
-                className={
-                  product.vegan
-                    ? `${SectionsCSS.text} ${SectionsCSS.vegan}`
-                    : SectionsCSS.text
-                }
-              >
-                {product.price}
-              </p>
-            </div>
-          )
-        })}
-      </div>
-    )
-  }
-  if (
-    section.name === 'Alkoholfreie Getränke' ||
-    section.name === 'Alkoholhaltige Getränke'
-  ) {
-    return (
-      <div key={section.name} className={SectionsCSS.menuDivision}>
-        <p className={SectionsCSS.menuHeading}>{section.name}</p>
-        {section.products.map((product) => {
-          return (
-            <div key={product.id} className={SectionsCSS.article}>
-              <p className={SectionsCSS.text}>
-                {product.name}{' '}
-                <span className={SectionsCSS.smallerText}>
-                  {product.extras}
-                </span>
-              </p>
-              <div className={SectionsCSS.containerDrinks}>
-                <p className={SectionsCSS.text}>{product.size}</p>
-                <p className={SectionsCSS.text}>{product.price}</p>
-              </div>
-            </div>
-          )
-        })}
-      </div>
-    )
-  }
-})
 
 const bestsellerCards = bestseller.map((item) => {
   return (
@@ -95,9 +28,9 @@ export default function Sections() {
             imgURL={item.imgURL}
             imgALT={item.imgALT}
           >
-            {item.order === 0 ? speisekarte : null}
+            {item.order === 0 ? <Menu /> : null}
             {item.order === 1 ? bestsellerCards : null}
-            {item.order === 2 ? <p>Tageskarte info</p> : null}
+            {item.order === 2 ? <p>Kommt bald ...</p> : null}
           </Section>
         )
       })}
