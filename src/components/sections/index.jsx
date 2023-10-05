@@ -1,4 +1,6 @@
-import { bestseller, menu, sections } from '../../data'
+import { bestseller } from '../../data/bestseller'
+import { menu } from '../../data/menu'
+import { sections } from '../../data/sections'
 import BestsellerCard from '../ui/cards/BestsellerCard'
 import Section from '../ui/section/Section'
 import SectionsCSS from './Sections.module.css'
