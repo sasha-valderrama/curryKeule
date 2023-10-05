@@ -49,6 +49,6 @@
 
 @media (width > 600px) {
   .imgDivisor {
-    max-width: 20rem;
+    display: none;
   }
 }

@@ -8,11 +8,11 @@ const speisekarte = menu.map((section) => {
         <p
           className={
             section.name === 'Beilagen'
-              ? `${MenuCSS.menuHeading} ${MenuCSS.order3}`
-              : `${MenuCSS.menuHeading}`
+              ? MenuCSS.menuHeading
+              : `${MenuCSS.menuHeading} ${MenuCSS.displaySection}`
           }
         >
-          {section.name === 'Beilagen' ? section.name : null}
+          {section.name}
         </p>
         {section.products.map((product) => {
           return (

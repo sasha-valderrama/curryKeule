@@ -52,19 +52,35 @@
   gap: 2rem;
 }
 
+.displaySection {
+  display: none;
+}
+
 @media (width > 500px) {
   .menu_container {
     flex-direction: row;
     gap: 4rem;
     margin: 2rem;
-    /* align-items: stretch; */
+    align-items: baseline;
     /* align-items: baseline; */
   }
   .menuDivision {
-    max-width: 400px;
+    width: fit-content;
   }
 
-  .order3 {
-    order: 4;
+  .menuHeading {
+    /* font-size: var(--fs-body-lg);
+    transform: translate(-50px, -40px) rotate(-15deg); */
+  }
+  .article {
+    display: flex;
+    margin-bottom: 0.7rem;
+    gap: 1rem;
+    width: 400px;
+    justify-content: space-between;
+    outline: 1px solid blue;
+  }
+  .displaySection {
+    display: block;
   }
 }
