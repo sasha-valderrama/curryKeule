@@ -13,6 +13,10 @@
   gap: 1.8rem;
 }
 
+.container:hover {
+  background-color: rgba(207, 207, 252, 0.3);
+}
+
 .heading {
   /* font-family: var(--ff-body);
   font-weight: var(--fw-black); */

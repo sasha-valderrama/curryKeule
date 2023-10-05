@@ -1,7 +1,7 @@
 .section {
   margin: 0.5rem;
   padding: 0.5rem;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +12,6 @@
   font-family: var(--ff-heading);
   font-size: var(--fs-heading2);
   color: var(--color-white);
-
   -webkit-text-stroke: 1.6px var(--color-red);
   text-shadow: 0px 4px 10px rgb(252, 118, 118);
   text-align: center;
@@ -37,7 +36,7 @@
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
-  gap:2rem;
+  gap: 2rem;
   margin-top: 4rem;
 }
 

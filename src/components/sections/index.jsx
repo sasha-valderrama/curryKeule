@@ -7,6 +7,9 @@ const speisekarte = menu.map((section) => {
   if (section.name === 'Speisen' || section.name === 'Beilagen') {
     return (
       <div key={section.name} className={SectionsCSS.sectionDivision}>
+        <p className={SectionsCSS.sectionHeading}>
+          {section.name === 'Beilagen' ? section.name : null}
+        </p>
         {section.products.map((product) => {
           return (
             <div key={product.id} className={SectionsCSS.article}>
@@ -32,6 +35,32 @@ const speisekarte = menu.map((section) => {
               >
                 {product.price}
               </p>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+  if (
+    section.name === 'Alkoholfreie Getränke' ||
+    section.name === 'Alkoholhaltige Getränke'
+  ) {
+    return (
+      <div key={section.name} className={SectionsCSS.sectionDivision}>
+        <p className={SectionsCSS.sectionHeading}>{section.name}</p>
+        {section.products.map((product) => {
+          return (
+            <div key={product.id} className={SectionsCSS.article}>
+              <p className={SectionsCSS.text}>
+                {product.name}{' '}
+                <span className={SectionsCSS.smallerText}>
+                  {product.extras}
+                </span>
+              </p>
+              <div className={SectionsCSS.containerDrinks}>
+                <p className={SectionsCSS.text}>{product.size}</p>
+                <p className={SectionsCSS.text}>{product.price}</p>
+              </div>
             </div>
           )
         })}

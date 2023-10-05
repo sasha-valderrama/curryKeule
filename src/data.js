@@ -296,7 +296,7 @@ export const menu = [
   },
   {
     name: 'Alkoholfreie Getränke',
-    items: [
+    products: [
       {
         id: nanoid(),
         name: 'Coca Cola',
@@ -401,7 +401,7 @@ export const menu = [
   },
   {
     name: 'Alkoholhaltige Getränke',
-    items: [
+    products: [
       {
         id: nanoid(),
         name: 'Berliner Jubiläums Pils',
@@ -446,7 +446,7 @@ export const menu = [
   },
   {
     name: 'Allergene',
-    items: [
+    products: [
       {
         id: nanoid(),
         name: 'A',
