@@ -156,6 +156,13 @@ table {
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'Rammetto One';
+  src: url(../assets/fonts/RammettoOne/RammettoOne-Regular.woff2)
+    format('woff2');
+  font-weight: 400;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -187,6 +194,7 @@ table {
   --fs-button: var(--fs-sm);
   --fs-copyright: var(--fs-xxs);
   --ff-heading: 'PaytoneOne';
+  --ff-sectionHeading: 'Rammetto One';
   --ff-preHeading: 'Nerko One';
   --ff-body: 'Roboto';
   --ff-button: 'Roboto';
