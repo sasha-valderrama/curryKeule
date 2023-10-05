@@ -1,6 +1,6 @@
 button {
   border: none;
-  box-shadow: 0px 0px 9.10959px 0px rgba(255, 174, 3, 0.6);
+  box-shadow: 0px 0px 9.10959px 0px rgba(var(--color-yellow), 0.6);
   font-family: var(--ff-button);
   font-size: var(--fs-button);
   font-weight: var(--fw-black);
@@ -10,12 +10,12 @@ button {
 }
 
 .primary {
-  background: #261e61;
-  color: #fcb706;
+  background: rgb(var(--color-purple));
+  color: rgb(var(--color-yellow));
 }
 
 .secondary {
-  background: var(--color-yellow);
-  color: var(--color-purple);
+  background: rgb(var(--color-yellow));
+  color: rgb(var(--color-purple));
   font-weight: var(--fw-bold);
 }

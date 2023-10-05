@@ -1,5 +1,4 @@
 .menu_container {
-  outline: 1px solid yellow;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +12,6 @@
   margin-bottom: 0.7rem;
   gap: 1rem;
   justify-content: space-between;
-  outline: 1px solid blue;
 }
 
 .text {
@@ -26,14 +24,14 @@
 }
 
 .vegan {
-  color: var(--color-green);
+  color: rgb(var(--color-green));
   font-weight: var(--fw-bold);
 }
 
 .menuDivision {
   width: 100%;
   margin-bottom: 1rem;
-  outline: 1px solid green;
+
   /* display: flex;
   flex-direction: column;
   flex-wrap: wrap; */
@@ -43,7 +41,7 @@
   font-family: var(--ff-body);
   font-weight: var(--fw-black);
   font-size: var(--fs-body);
-  color: var(--color-purple);
+  color: rgb(var(--color-purple));
   margin-bottom: 1rem;
 }
 
@@ -68,17 +66,17 @@
     width: fit-content;
   }
 
-  .menuHeading {
+  /* .menuHeading { 
     /* font-size: var(--fs-body-lg);
-    transform: translate(-50px, -40px) rotate(-15deg); */
-  }
+    transform: translate(-50px, -40px) rotate(-15deg); 
+  }*/
   .article {
     display: flex;
     margin-bottom: 0.7rem;
     gap: 1rem;
     width: 400px;
     justify-content: space-between;
-    outline: 1px solid blue;
+    /* outline: 1px solid blue; */
   }
   .displaySection {
     display: block;

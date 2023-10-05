@@ -23,7 +23,7 @@
 .heading,
 .preHeading {
   font-family: var(--ff-heading);
-  color: var(--color-white);
+  color: rgb(var(--color-white));
 }
 
 .preHeading {
@@ -32,11 +32,12 @@
 
 .heading {
   font-size: var(--fs-heading1);
-  text-shadow: -10px -10px 20px rgba(163, 0, 0, 0.6),
-    10px 0px 20px rgba(255, 43, 43, 0.6), -10px 10px 20px rgba(255, 0, 0, 0.6),
-    10px 10px 20px rgba(179, 0, 0, 0.6), -3px -3px 5px var(--color-red),
-    3px -3px 5px var(--color-red), -3px 3px 5px var(--color-red),
-    3px 3px 5px var(--color-red);
+  text-shadow: -10px -10px 20px rgba(var(--color-dark-red), 0.6),
+    10px 0px 20px rgba(var(--color-bright-red), 0.6),
+    -10px 10px 20px rgba(var(--color-bright-red), 0.6),
+    10px 10px 20px rgba(var(--color-dark-red), 0.6),
+    -3px -3px 5px rgb(var(--color-red)), 3px -3px 5px rgb(var(--color-red)),
+    -3px 3px 5px rgb(var(--color-red)), 3px 3px 5px rgb(var(--color-red));
   line-height: 0.95;
   margin-top: 0.5rem;
   margin-bottom: var(--heading-margin-bottom);
@@ -44,8 +45,8 @@
 
 .preHeading {
   font-size: var(--fs-heading4);
-  text-shadow: 3px -3px 5px var(--color-red), -3px 3px 5px var(--color-red),
-    3px 3px 5px var(--color-red);
+  text-shadow: 3px -3px 5px rgb(var(--color-red)),
+    -3px 3px 5px rgb(var(--color-red)), 3px 3px 5px rgb(var(--color-red));
 }
 
 .buttons {

@@ -10,6 +10,7 @@
   left: 0;
   right: 0;
   transition: top 250ms ease-in-out;
+  background-color: rgb(var(--color-purple), 0.03);
 }
 
 .logo {
@@ -38,7 +39,7 @@
   }
 
   .nav li {
-    color: var(--color-purple);
+    color: rgb(var(--color-purple));
     font-family: var(--ff-heading);
     font-size: var(--fs-body);
   }

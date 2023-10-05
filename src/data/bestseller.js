@@ -1,7 +1,7 @@
 export const bestseller = [
   {
     id: 0,
-    heading: 'Der beste Hamburger im ganzen Wedding  (versprochen!)',
+    heading: 'Hamburger mit allet drinne',
     description: 'mit Bacon, Cheddar-Käse, Soße und Salat',
     imgURL: `${import.meta.env.BASE_URL}assets/images/bestseller__1.png`,
     imgALT: 'Bild von Hamburger',
@@ -9,8 +9,8 @@ export const bestseller = [
   },
   {
     id: 1,
-    heading: 'Cevapcici nach -geheimer- hauseigener Rezept',
-    description: '5 Stück mit Pommes und Djuvecreis',
+    heading: 'Beste Currywurst im Wedding',
+    description: '1 Stück Currywurst mit Pommes. Dazu Ketchup und Mayo',
     imgURL: `${import.meta.env.BASE_URL}assets/images/bestseller__2.png`,
     imgALT: 'Bild von Currywurst',
     price: '7.50€',

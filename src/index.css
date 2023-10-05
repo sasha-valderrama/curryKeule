@@ -176,13 +176,17 @@ a {
 
 :root {
   /*CSS VARIABLES*/
-  --color-bright-red: #ff1717;
-  --color-red: #da0000;
-  --color-white: #fff;
-  --color-black: #000;
-  --color-purple: rgb(38, 30, 97);
-  --color-yellow: #ffae03;
-  --color-green: #066004;
+  --color-bright-red: 255, 23, 23;
+  --color-red: 218, 0, 0;
+  --color-dark-red: 128, 0, 0;
+  --color-red-rgb: 218, 0, 0;
+  --color-white: 255, 255, 255;
+  --color-black: 0, 0, 0;
+  /* --color-purple: rgb(38, 30, 97); */
+  --color-purple: 38, 30, 97;
+  /* --color-yellow: #ffae03; */
+  --color-yellow: 255, 174, 3;
+  --color-green: 6, 96, 4;
   --fs-xxl: 3.5rem; /*60px*/
   --fs-xl: 1.8rem; /*28.8px*/
   --fs-lg: 1.25rem; /*20px*/
