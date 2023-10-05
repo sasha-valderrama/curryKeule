@@ -14,7 +14,7 @@
     #b80404,
     #a80404
   );
-  padding: 2.5rem 0.5rem 0.5rem;
+  padding: 5rem 0.5rem 5rem;
   position: relative;
 }
 
@@ -74,7 +74,6 @@
 
 .text,
 .copyright {
-  /* text-shadow: 3px 2px 3px var(--color-red); */
   font-weight: var(--fw-black);
 }
 
@@ -115,6 +114,9 @@
 }
 
 @media (width > 500px) {
+  .footer {
+    padding: 1rem 0.5rem 0rem;
+   } 
   .main_container {
     margin: 3rem;
     margin-bottom: 0;
@@ -134,9 +136,9 @@
 }
 
 @media (width > 1300px) {
-  .footer {
-    padding: 2.5rem 0.5rem 3rem;
-  }
+    .footer {
+    padding: 5rem 0.5rem 5rem;
+   } 
   .heading {
     margin-bottom: 3rem;
   }
