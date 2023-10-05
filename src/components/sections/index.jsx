@@ -6,8 +6,8 @@ import SectionsCSS from './Sections.module.css'
 const speisekarte = menu.map((section) => {
   if (section.name === 'Speisen' || section.name === 'Beilagen') {
     return (
-      <div key={section.name} className={SectionsCSS.sectionDivision}>
-        <p className={SectionsCSS.sectionHeading}>
+      <div key={section.name} className={SectionsCSS.menuDivision}>
+        <p className={SectionsCSS.menuHeading}>
           {section.name === 'Beilagen' ? section.name : null}
         </p>
         {section.products.map((product) => {
@@ -46,8 +46,8 @@ const speisekarte = menu.map((section) => {
     section.name === 'Alkoholhaltige Getränke'
   ) {
     return (
-      <div key={section.name} className={SectionsCSS.sectionDivision}>
-        <p className={SectionsCSS.sectionHeading}>{section.name}</p>
+      <div key={section.name} className={SectionsCSS.menuDivision}>
+        <p className={SectionsCSS.menuHeading}>{section.name}</p>
         {section.products.map((product) => {
           return (
             <div key={product.id} className={SectionsCSS.article}>

@@ -1,20 +1,7 @@
-/* .imgDivisor {
-  max-width: 10rem;
-  width: 100vw;
-  height: auto;
-}
-
-@media (width > 600px) {
-  .imgDivisor {
-    max-width: 19rem;
-    width: 50vw;
-  }
-} */
-
 .article {
   display: flex;
-  margin-bottom: 0.5rem;
-  gap: 0.1rem;
+  margin-bottom: 0.7rem;
+  gap: 1rem;
   justify-content: space-between;
 }
 
@@ -32,12 +19,12 @@
   font-weight: var(--fw-bold);
 }
 
-.sectionDivision {
+.menuDivision {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-.sectionHeading {
+.menuHeading {
   font-family: var(--ff-body);
   font-weight: var(--fw-black);
   font-size: var(--fs-body);

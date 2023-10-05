@@ -12,16 +12,17 @@
 .heading {
   font-family: var(--ff-sectionHeading);
   font-size: var(--fs-heading2);
-  color: var(--color-white);
-  -webkit-text-stroke: 1.6px var(--color-red);
-  text-shadow: 0px 4px 10px rgb(252, 118, 118);
+  color: var(--color-bright-red);
+  -webkit-text-stroke: 3px var(--color-white);
+  text-shadow: 0px 4px 10px rgb(253, 150, 150);
   text-align: center;
   max-width: 60%;
   margin: 3rem auto;
 }
 
 .heading:hover {
-  text-shadow: 0px 4px 10px rgb(240, 196, 2);
+  text-shadow: 0px 4px 10px var(--color-yellow);
+  color: var(--color-purple);
 }
 
 .imgDivisor {
@@ -36,7 +37,7 @@
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 @media (width > 600px) {
