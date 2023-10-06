@@ -1,6 +1,7 @@
 import { bestseller } from '../../data/bestseller'
 import { sections } from '../../data/sections'
 import BestsellerCard from '../ui/cards/BestsellerCard'
+import SectionsCSS from './Sections.module.css'
 import Menu from '../ui/menu'
 import Section from '../ui/section'
 
