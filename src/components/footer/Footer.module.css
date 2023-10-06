@@ -1,5 +1,6 @@
 .division {
   position: relative;
+  z-index: 999;
 }
 
 .footer {
@@ -21,7 +22,6 @@
   padding: 5rem 0.5rem;
   padding-top: 9rem;
   /* position: relative; */
-
 }
 
 .main_container {
@@ -79,8 +79,6 @@
 .schedule > tr {
   margin-bottom: 1rem;
 }
-
-
 
 .small {
   font-size: var(--fs-body-small);

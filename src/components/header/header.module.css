@@ -10,7 +10,7 @@
   left: 0;
   right: 0;
   transition: top 250ms ease-in-out;
-  background-color: rgb(var(--color-purple), 0.03);
+  background-color: rgb(var(--color-dark-red), 0.06);
 }
 
 .logo {

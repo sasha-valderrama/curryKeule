@@ -1,4 +1,3 @@
-import Line from '../ui/divisor'
 import HeaderCSS from './header.module.css'
 
 let prevScrollPos = window.scrollY
@@ -23,7 +22,7 @@ export default function Header() {
       <img
         className={HeaderCSS.logo}
         src={import.meta.env.BASE_URL + 'assets/images/logo.png'}
-      />
+        />
       <nav className={HeaderCSS.nav}>
         <ul>
           <li>
