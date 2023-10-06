@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   /* fill: #fff;  */
-  z-index: 999;
+  z-index: 99;
 }
 .top {
   top: -1px;
@@ -16,8 +16,29 @@
   transform: scale(1, 1);
 }
 
+.header {
+  display: none;
+  z-index: -1;
+  top: -50px;
+  transform: scale(1, -1);
+}
+
 @media (width > 600px) {
   .bottom {
     bottom: -60px;
   }
 }
+
+@media (width > 1000px) {
+  .header {
+    display: block;
+  }
+}
+
+/* @media (width > 1300px) {
+  .header {
+    top:-100px
+  }
+} */
+
+

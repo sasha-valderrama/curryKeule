@@ -4,7 +4,7 @@ import FooterCSS from './Footer.module.css'
 export default function Footer() {
   return (
     <div className={FooterCSS.division}>
-      <Line position="top" />
+      <Line position="footer" />
       <footer className={FooterCSS.footer}>
         <div className={FooterCSS.main_container}>
           <h2 className={FooterCSS.heading1}>Komm vorbei!</h2>

@@ -19,7 +19,7 @@ export default function LandingPage() {
             </div>
           </div>
         </section>
-        <Line position="bottom" />
+        <Line position="landingPage" />
       </>
     </div>
   )

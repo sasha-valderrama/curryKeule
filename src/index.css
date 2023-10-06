@@ -180,6 +180,21 @@ body {
 
 :root {
   /*CSS VARIABLES*/
+  --bg-red: linear-gradient(
+    to right bottom,
+    #c80c0c,
+    #d20b0b,
+    #dc090a,
+    #e70809,
+    #f10607,
+    #ee0506,
+    #ec0505,
+    #e90404,
+    #d80404,
+    #c80404,
+    #b80404,
+    #a80404
+  );
   --color-bright-red: 255, 23, 23;
   --color-red: 218, 0, 0;
   --color-dark-red: 128, 0, 0;
