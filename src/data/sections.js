@@ -5,7 +5,7 @@ export const sections = [
     id: nanoid(),
     function: 'Speisekarte',
     heading: 'Speisen und Getränke',
-    imgURL: `${import.meta.env.BASE_URL}assets/images/bg__cola.jpg`,
+    imgURL: `${import.meta.env.BASE_URL}assets/images/bg__cola.png`,
     imgALT: 'Bild von Coca-Cola',
   },
   {
@@ -20,7 +20,7 @@ export const sections = [
     id: nanoid(),
     function: 'Tageskarte',
     heading: 'Tageskarte',
-    imgURL: `${import.meta.env.BASE_URL}assets/images/bg__pommes.jpg`,
+    imgURL: `${import.meta.env.BASE_URL}assets/images/bg__pommes.png`,
     imgALT: 'Bild von Pommes',
   },
 ]
