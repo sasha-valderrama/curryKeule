@@ -1,10 +1,17 @@
 .waveSVG {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   height: auto;
   fill: #fff; /* Match the fill color with the SVG color */
   z-index: 999;
-  transform: scale(-1,1);
+}
+.top {
+  top: 0;
+  transform: scale(1, -1);
+}
+
+.bottom {
+  bottom: 0;
+  transform: scale(1, 1);
 }

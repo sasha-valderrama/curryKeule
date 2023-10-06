@@ -4,6 +4,7 @@ import BestsellerCard from '../ui/cards/BestsellerCard'
 import SectionsCSS from './Sections.module.css'
 import Menu from '../ui/menu'
 import Section from '../ui/section'
+import Line from '../ui/divisor'
 
 const bestsellerCards = bestseller.map((item) => {
   return (

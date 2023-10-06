@@ -1,3 +1,4 @@
+import Line from '../ui/divisor'
 import HeaderCSS from './header.module.css'
 
 let prevScrollPos = window.scrollY

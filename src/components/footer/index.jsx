@@ -1,14 +1,13 @@
-import Line from '../ui/line'
+import Line from '../ui/divisor'
 import FooterCSS from './Footer.module.css'
 
 export default function Footer() {
   return (
     <div className={FooterCSS.division}>
-      <Line />
-
+      <Line position="top" />
       <footer className={FooterCSS.footer}>
         <div className={FooterCSS.main_container}>
-             <h2 className={FooterCSS.heading1}>Komm vorbei!</h2>
+          <h2 className={FooterCSS.heading1}>Komm vorbei!</h2>
           <div className={FooterCSS.container}>
             <h3 className={FooterCSS.heading2}>Wann?</h3>
             <table className={FooterCSS.schedule}>

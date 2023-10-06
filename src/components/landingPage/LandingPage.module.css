@@ -2,7 +2,9 @@
   --heading-margin-bottom: 2rem;
   --scale-factor: 1.5;
 }
-
+.division {
+  position: relative;
+}
 .section {
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
   background-size: cover;
   background-position: bottom center;
   background-repeat: no-repeat;
+  padding-bottom: 6rem;
 }
 
 .container {
