@@ -7,8 +7,9 @@
 }
 .section {
   display: flex;
-  flex-direction: column;justify-content: center;
-  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+ height: 100vh;
   background-image: url(../../assets/images/bg__main.jpg);
   background-size: cover;
   background-position: bottom center;
@@ -70,8 +71,10 @@
   }
 }
 
-@media (width>1300px){
-  .section{
-    height: 117vh;
+@media (width > 1000px) {
+  .section {
+    height: 128vh;
   }
+  
 }
+

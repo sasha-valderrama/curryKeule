@@ -5,7 +5,7 @@
 
 .header {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: flex-end;
   align-items: center;
   padding: 0.5rem;
@@ -35,12 +35,6 @@
   .header {
     flex-direction: row;
   }
-  .logo {
-    width: 4rem;
-    height: auto;
-    position: relative;
-    bottom: 0;
-  }
 
   .nav ul {
     display: flex;
@@ -53,16 +47,10 @@
   .nav li {
     color: rgb(var(--color-white));
     font-family: var(--ff-heading);
-    font-size: var(--fs-body-lg);
+    font-size: var(--fs-heading4);
     /* text-shadow: 0px 4px 10px rgb(var(--color-yellow), 1); */
   }
-}
-
-@media (width> 1000px) {
-  .nav li {
-    font-size: var(--fs-heading4);
-  }
-    .logo {
+   .logo {
     width: 2rem;
     height: auto;
     margin-left: 2rem;
