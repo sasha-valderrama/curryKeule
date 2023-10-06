@@ -14,7 +14,7 @@ export default function Footer() {
               <tbody>
                 <tr>
                   <td>
-                    <p className={FooterCSS.text}>Mo-Fr</p>
+                    <p className={FooterCSS.text}>Mo - Fr</p>
                   </td>
                   <td>
                     <p className={FooterCSS.text}>10:00 - 22:00 Uhr</p>
@@ -28,14 +28,14 @@ export default function Footer() {
                     <p className={FooterCSS.text}>11:00 - 22:00 Uhr</p>
                   </td>
                 </tr>
-                <tr>
+                {/* <tr>
                   <td>
                     <p className={FooterCSS.text}>So</p>
                   </td>
                   <td>
                     <p className={FooterCSS.text}>geschlossen</p>
                   </td>
-                </tr>
+                </tr> */}
               </tbody>
             </table>
           </div>

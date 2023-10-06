@@ -3,7 +3,7 @@
   left: 0;
   width: 100%;
   height: auto;
-  fill: #fff; /* Match the fill color with the SVG color */
+  /* fill: #fff;  */
   z-index: 999;
 }
 .top {
