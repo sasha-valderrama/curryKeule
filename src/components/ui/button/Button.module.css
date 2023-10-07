@@ -4,9 +4,11 @@ button {
   font-family: var(--ff-button);
   font-size: var(--fs-button);
   font-weight: var(--fw-black);
-  border-radius: 10px;
+  border-radius: 25px;
   padding: 0.7em 1em;
   cursor: pointer;
+  position: relative;
+  z-index: 999;
 }
 
 .primary {
