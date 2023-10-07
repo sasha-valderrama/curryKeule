@@ -375,7 +375,7 @@ export const menu = [
     ],
   },
   {
-    name: 'Alkoholhaltige Getränke',
+    name: 'Alkoholische Getränke',
     products: [
       {
         id: nanoid(),
