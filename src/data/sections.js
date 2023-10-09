@@ -11,7 +11,7 @@ export const sections = [
   {
     id: nanoid(),
     heading: 'Bestseller',
-    subheading: 'Dit essen wa janz jerne',
+    subheading: 'Dit hamm wa janz jerne',
     imgURL: `${import.meta.env.BASE_URL}assets/images/bg__burger.png`,
     imgALT: 'Bild von Burger',
   },
