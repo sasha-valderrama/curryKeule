@@ -22,18 +22,19 @@ const bestsellerCards = bestseller.map((item) => {
 export default function Sections() {
   return (
     <>
-      {sections.map((item) => {
+      {sections.map((section) => {
         return (
           <Section
-            key={item.id}
-            id={item.function}
-            section={item.heading}
-            imgURL={item.imgURL}
-            imgALT={item.imgALT}
+            key={section.id}
+            id={section.function}
+            section={section.heading}
+            subheading={section.subheading}
+            imgURL={section.imgURL}
+            imgALT={section.imgALT}
           >
-            {item.function === 'Speisekarte' ? <Menu /> : null}
-            {item.function === 'Bestseller' ? bestsellerCards : null}
-            {item.function === 'Tageskarte' ? <p>Kommt bald ...</p> : null}
+            {section.heading === 'Speisekarte' ? <Menu /> : null}
+            {section.heading === 'Bestseller' ? bestsellerCards : null}
+            {section.heading === 'Tageskarte' ? <p>Kommt bald ...</p> : null}
           </Section>
         )
       })}
