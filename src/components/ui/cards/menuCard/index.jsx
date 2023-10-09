@@ -1,7 +1,7 @@
 import MenuCardCSS from './MenuCard.module.css'
 import {PiHamburger} from 'react-icons/pi'
 import {CiFries} from 'react-icons/ci'
-import {LuCupSoda} from 'react-icons/lu'
+import { BsCupStraw } from 'react-icons/bs'
 import {IoBeerOutline} from 'react-icons/io5'
 
 export default function MenuCard({ container }) {
@@ -12,7 +12,7 @@ export default function MenuCard({ container }) {
   }   if (container === 'Beilagen') {
     icon = <CiFries className={iconStyle} />
   } if (container === 'Alkoholfreie Getränke') {
-    icon = <LuCupSoda className={iconStyle} />
+    icon = <BsCupStraw className={iconStyle} />
   } if (container === 'Alkoholische Getränke') {
     icon = <IoBeerOutline className={iconStyle} />
   } 
