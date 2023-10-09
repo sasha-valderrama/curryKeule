@@ -21,7 +21,7 @@
 
 .heading {
   font-size: var(--fs-heading4);
-  margin: 7rem auto 2rem;
+  margin: 7rem auto 1rem;
 }
 
 .subheading {
