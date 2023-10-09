@@ -1,6 +1,7 @@
 import { bestseller } from '../../data/bestseller'
 import { sections } from '../../data/sections'
 import BestsellerCard from '../ui/cards/bestsellerCard'
+import TestingCard from '../ui/cards/testingCard'
 import Menu from '../ui/menu'
 import Section from '../ui/section'
 
@@ -32,7 +33,14 @@ export default function Sections() {
           >
             {section.heading === 'Speisekarte' ? <Menu /> : null}
             {section.heading === 'Bestseller' ? bestsellerCards : null}
-            {section.heading === 'Tageskarte' ? <p>Kommt bald ...</p> : null}
+            {section.heading === 'Tageskarte' ? (
+              <div>
+                <TestingCard />
+                <TestingCard />
+                <TestingCard />
+                <TestingCard />
+              </div>
+            ) : null}
           </Section>
         )
       })}
