@@ -29,12 +29,6 @@
   margin-bottom: 5rem;
 }
 
-.heading:hover,
-.subheading:hover {
-  text-shadow: 0px 4px 10px rgb(var(--color-yellow));
-  color: rgb(var(--color-purple));
-}
-
 .imgDivisor {
   margin-top: 6rem;
   margin-bottom: 6rem;

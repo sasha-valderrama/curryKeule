@@ -42,7 +42,7 @@
     10px 10px 20px rgba(var(--color-dark-red), 0.6),
     -3px -3px 5px rgb(var(--color-red)), 3px -3px 5px rgb(var(--color-red)),
     -3px 3px 5px rgb(var(--color-red)), 3px 3px 5px rgb(var(--color-red));
-  line-height: 0.95;
+  /* line-height: 0.95; */
   margin-top: 0.5rem;
   margin-bottom: var(--heading-margin-bottom);
 }
