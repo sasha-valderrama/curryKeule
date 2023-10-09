@@ -1,7 +1,4 @@
-import React from 'react'
 import DivisorCSS from './Divisor.module.css'
-
-
 
 export default function Divisor({position}) {
   return (

@@ -1,4 +1,5 @@
 import { menu } from '../../../data/menu'
+import MenuCard from '../cards/menuCard'
 import MenuCSS from './Menu.module.css'
 
 const speisekarte = menu.map((section) => {
@@ -69,10 +70,17 @@ const speisekarte = menu.map((section) => {
   }
 })
 
+const testing = menu.map((section) => {
+  if (section.name !== 'Anmerkungen' && section.name !== 'Allergene') {
+    return <MenuCard key={section.name} container={section.name} />
+  }
+})
+
 export default function Menu() {
   return (
     <div className={MenuCSS.menu_container}>
-      {speisekarte}
+      {/* {speisekarte} */}
+      {testing}
     </div>
   )
 }

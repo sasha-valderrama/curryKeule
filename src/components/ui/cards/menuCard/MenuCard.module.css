@@ -1,0 +1,29 @@
+.container {
+  background-color: rgb(var(--color-purple));
+  width: 11rem;
+  height: 11rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(var(-color-purple));
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(var(--color-purple), 0.25);
+  padding: 2rem 1rem 4rem;
+  gap: 1rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container__name {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-body-small);
+  color: rgb(var(--color-yellow));
+  text-align: center;
+}
+
+.container__icon {
+  width: 5rem;
+  height: 5rem;
+  color: rgb(var(--color-yellow));
+}

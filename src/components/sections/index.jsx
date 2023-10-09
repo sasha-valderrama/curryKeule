@@ -1,10 +1,8 @@
 import { bestseller } from '../../data/bestseller'
 import { sections } from '../../data/sections'
-import BestsellerCard from '../ui/cards/BestsellerCard'
-import SectionsCSS from './Sections.module.css'
+import BestsellerCard from '../ui/cards/bestsellerCard'
 import Menu from '../ui/menu'
 import Section from '../ui/section'
-import Line from '../ui/divisor'
 
 const bestsellerCards = bestseller.map((item) => {
   return (
