@@ -17,11 +17,3 @@ export const bestseller = [
   },
 ]
 
-export const tageskarte = [
-  {
-    id: 0,
-    heading: 'ffgfgdgfdgff',
-    description: 'dfsfdsfsfdfsdfffdsfds',
-    price: '12.40',
-  },
-]
