@@ -46,7 +46,7 @@ const speisekarte = menu.map((section) => {
   }
   if (
     section.name === 'Alkoholfreie Getränke' ||
-    section.name === 'Alkoholhaltige Getränke'
+    section.name === 'Alkoholische Getränke'
   ) {
     return (
       <div key={section.name} className={MenuCSS.menuDivision}>
@@ -79,8 +79,8 @@ const testing = menu.map((section) => {
 export default function Menu() {
   return (
     <div className={MenuCSS.menu_container}>
-      {/* {speisekarte} */}
-      {testing}
+      {speisekarte}
+      {/* {testing} */}
     </div>
   )
 }

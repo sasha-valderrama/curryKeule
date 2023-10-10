@@ -1,7 +1,7 @@
 import { nanoid } from 'nanoid'
 
-export const menu = [
-  {
+
+const speisen =  {
     name: 'Speisen',
     products: [
       {
@@ -150,8 +150,9 @@ export const menu = [
         note: 'I-1-4',
       },
     ],
-  },
-  {
+  }
+
+const anmerkungen =  {
     name: 'Anmerkungen',
     items: [
       {
@@ -169,8 +170,9 @@ export const menu = [
         description: 'Selbstgemachter Ketchup und Burgersauce',
       },
     ],
-  },
-  {
+  }
+
+  const beilagen = {
     name: 'Beilagen',
     products: [
       {
@@ -268,8 +270,85 @@ export const menu = [
         extras: '',
       },
     ],
-  },
-  {
+  }
+
+  const allergene ={
+    name: 'Allergene',
+    products: [
+      {
+        id: nanoid(),
+        name: 'A',
+        description: 'Glutenhaltige Getreide',
+      },
+      {
+        id: nanoid(),
+        name: 'C',
+        description: 'enthält Ei',
+      },
+      {
+        id: nanoid(),
+        name: 'F',
+        description: 'enthält Soja',
+      },
+      {
+        id: nanoid(),
+        name: 'G',
+        description: 'Milch',
+      },
+      {
+        id: nanoid(),
+        name: 'I',
+        description: 'enthält Sellerie',
+      },
+      {
+        id: nanoid(),
+        name: 'J',
+        description: 'enthält Senf',
+      },
+      {
+        id: nanoid(),
+        name: '1',
+        description: 'mit Farbstoff',
+      },
+      {
+        id: nanoid(),
+        name: '2',
+        description: 'mit Konservierungsstoffe',
+      },
+      {
+        id: nanoid(),
+        name: '3',
+        description: 'mit Antioxidionsmittel',
+      },
+      {
+        id: nanoid(),
+        name: '4',
+        description: 'mit Geschmacksverstäerker',
+      },
+      {
+        id: nanoid(),
+        name: '8',
+        description: 'Zuckerart undSüßungsmittel',
+      },
+      {
+        id: nanoid(),
+        name: '10',
+        description: 'mit Phosphat',
+      },
+      {
+        id: nanoid(),
+        name: '11',
+        description: 'mit Koffein',
+      },
+      {
+        id: nanoid(),
+        name: '14',
+        description: 'mit Stabilisatoren',
+      },
+    ],
+  }
+
+  const alkfGetränke = {
     name: 'Alkoholfreie Getränke',
     products: [
       {
@@ -373,8 +452,9 @@ export const menu = [
         note: 'A',
       },
     ],
-  },
-  {
+  }
+
+ const alkGetränke = {
     name: 'Alkoholische Getränke',
     products: [
       {
@@ -418,80 +498,15 @@ export const menu = [
         size: '0,25l',
       },
     ],
-  },
-  {
-    name: 'Allergene',
-    products: [
-      {
-        id: nanoid(),
-        name: 'A',
-        description: 'Glutenhaltige Getreide',
-      },
-      {
-        id: nanoid(),
-        name: 'C',
-        description: 'enthält Ei',
-      },
-      {
-        id: nanoid(),
-        name: 'F',
-        description: 'enthält Soja',
-      },
-      {
-        id: nanoid(),
-        name: 'G',
-        description: 'Milch',
-      },
-      {
-        id: nanoid(),
-        name: 'I',
-        description: 'enthält Sellerie',
-      },
-      {
-        id: nanoid(),
-        name: 'J',
-        description: 'enthält Senf',
-      },
-      {
-        id: nanoid(),
-        name: '1',
-        description: 'mit Farbstoff',
-      },
-      {
-        id: nanoid(),
-        name: '2',
-        description: 'mit Konservierungsstoffe',
-      },
-      {
-        id: nanoid(),
-        name: '3',
-        description: 'mit Antioxidionsmittel',
-      },
-      {
-        id: nanoid(),
-        name: '4',
-        description: 'mit Geschmacksverstäerker',
-      },
-      {
-        id: nanoid(),
-        name: '8',
-        description: 'Zuckerart undSüßungsmittel',
-      },
-      {
-        id: nanoid(),
-        name: '10',
-        description: 'mit Phosphat',
-      },
-      {
-        id: nanoid(),
-        name: '11',
-        description: 'mit Koffein',
-      },
-      {
-        id: nanoid(),
-        name: '14',
-        description: 'mit Stabilisatoren',
-      },
-    ],
-  },
-]
+  }
+
+
+
+  export const menu = [
+    speisen,
+    anmerkungen,
+    beilagen,
+    alkfGetränke,
+    alkGetränke,
+    allergene,
+  ]
