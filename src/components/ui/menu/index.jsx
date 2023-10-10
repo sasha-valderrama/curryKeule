@@ -70,7 +70,13 @@ const speisekarte = menu.map((section) => {
   }
 })
 
-const testing = menu.map((section) => {
+const icons = menu.map((section) => {
+  if (section.name !== 'Anmerkungen' && section.name !== 'Allergene') {
+    return <MenuCard key={section.name} container={section.name} />
+  }
+})
+
+const carte = menu.map((section) => {
   if (section.name !== 'Anmerkungen' && section.name !== 'Allergene') {
     return <MenuCard key={section.name} container={section.name} />
   }
@@ -79,8 +85,8 @@ const testing = menu.map((section) => {
 export default function Menu() {
   return (
     <div className={MenuCSS.menu_container}>
-      {speisekarte}
-      {/* {testing} */}
+      {/* {speisekarte} */}
+      {icons}
     </div>
   )
 }

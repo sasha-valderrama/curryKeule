@@ -348,8 +348,8 @@ const anmerkungen =  {
     ],
   }
 
-  const alkfGetränke = {
-    name: 'Alkoholfreie Getränke',
+  const alkfrGetränke = {
+    name: 'Alkfr. Getränke',
     products: [
       {
         id: nanoid(),
@@ -455,7 +455,7 @@ const anmerkungen =  {
   }
 
  const alkGetränke = {
-    name: 'Alkoholische Getränke',
+    name: 'Alk. Getränke',
     products: [
       {
         id: nanoid(),
@@ -506,7 +506,7 @@ const anmerkungen =  {
     speisen,
     anmerkungen,
     beilagen,
-    alkfGetränke,
+    alkfrGetränke,
     alkGetränke,
     allergene,
   ]
