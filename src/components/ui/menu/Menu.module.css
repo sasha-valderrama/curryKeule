@@ -1,5 +1,5 @@
 .menu_container {
-  outline:1px solid blue;
+  /* outline:1px solid blue; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,6 +52,10 @@
 }
 
 @media (width > 500px) {
+  .menu_container {
+      margin-top: 5rem;
+ margin-bottom: 10rem;
+}
   .menuDivision {
     width: fit-content;
   }
