@@ -111,7 +111,14 @@ export default function MenuCard({ container }) {
         <p className={MenuCardCSS.container__name}>{container}</p>
       </div>
       <div className={cardBottomClass}>
-        <p>contenido</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
+        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
       </div>
     </div>
   )
