@@ -1,19 +1,10 @@
 .menu_container {
-
   display: flex;
   justify-content: center;
-  align-items:center;
   align-items:stretch;
   flex-wrap: wrap;
   gap:3rem;
   width: 100%;
-}
-
-@media (width> 500px) {
-  .menu_container{
-      
-    gap: 5rem;
-  }
 }
 
 @media (width> 1000px) {
