@@ -201,11 +201,9 @@ body {
   --color-red-rgb: 218, 0, 0;
   --color-white: 255, 255, 255;
   --color-black: 0, 0, 0;
-  /* --color-purple: rgb(38, 30, 97); */
   --color-purple: 38, 30, 97;
-  /* --color-yellow: #ffae03; */
   --color-yellow: 255, 174, 3;
-  --color-green: 6, 96, 4;
+  --color-green:174, 254, 61;
   --fs-xxl: 3.6rem; /*60px*/
   --fs-xl: 2.6rem; /*x*/
   --fs-lg: 1.4rem; /*20px*/

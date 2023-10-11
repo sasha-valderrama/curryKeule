@@ -1,18 +1,10 @@
 .container__card {
-  background-color: rgb(var(--color-purple));
-  border-radius: 10px;
-  box-shadow: 4px 4px 10px rgba(var(--color-purple), 0.25);
-  padding: 1rem;
-  /* width: 11rem; */
-  /* height: 11rem; */
-  /* display: flex;
-  justify-content: start;
-  align-items: start; */
-  /* flex-direction: column; */
-  width: fit-content;
+  display: flex;
+  justify-content:center;
+  width: 100%;
   break-inside: avoid;
   transition: all 0.3s ease;
-  /* outline:5px solid green; */
+  min-width: 150px;
 }
 
 .card__top {
@@ -24,6 +16,9 @@
   flex-direction: column;
   transition: transform 0.3s ease-in-out;
   color: rgb(var(--color-yellow));
+  background-color: rgb(var(--color-purple));
+  border-radius: 10px;
+   box-shadow: 4px 4px 10px rgba(var(--color-purple), 0.25);
 }
 
 .container__name {
@@ -40,32 +35,95 @@
 }
 
 .small {
+  background-color: transparent;
   color: rgb(var(--color-white));
   width: fit-content;
   height: auto;
-  padding: 0.8rem 1rem;
   position: absolute;
   z-index: 99;
-  transform: translate(-45px, -100px) rotate(-15deg);
+  transform: translateY(-75px) rotate(-5deg);
   transition: transform 0.3s ease-in-out;
+   box-shadow: none;
 }
 
 .card__bottom {
+  border-radius: 10px;
   display: none;
   transition: transform 300ms ease-out;
+  background-color: rgb(var(--color-purple));
   transform-origin: top left;
+  box-shadow: 4px 4px 10px rgba(var(--color-purple), 0.25);
 }
 
 .show {
   display: block;
   position: relative;
-  /* width: 100%;
-  height: 100%; */
   transform: width 300ms ease-out;
-  /* background-color: aqua; */
-  color: rgb(var(--color-white));
+   color: rgb(var(--color-white));
   padding: 1rem;
   padding-top: 2rem;
-  width: fit-content;
+  width: 100%;
   transform: scale(1) translate(0, 0) rotate(0);
+}
+
+.article {
+  display: flex;
+  margin-bottom: 0.7rem;;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.text {
+  font-family: var(--ff-body);
+  font-size: var(--fs-body-small);
+}
+
+.smallerText {
+  font-size: var(--fs-copyright);
+}
+
+.vegan {
+  color: rgb(var(--color-green));
+  font-weight: var(--fw-bold);
+}
+
+.containerDrinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.displaySection {
+  display: none;
+}
+
+@media (width > 600px){
+  .container__card {
+  min-width: 250px;
+  width: 22%;
+}
+.card__top {
+  width: 12rem;
+  height: 12rem;
+}
+
+.small {
+  transform: translateY(-150px) rotate(-5deg);
+} 
+} 
+
+
+@media (width > 1000px){
+  .container__card {
+  width: 22%;
+}
+}
+
+@media (width > 1300px){
+ .container__card {
+  width: 33%;
+}
+.card__top {
+  width: 15rem;
+  height: 15rem;
+}
 }

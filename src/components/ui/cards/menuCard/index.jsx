@@ -6,38 +6,30 @@ import { IoBeerOutline } from 'react-icons/io5'
 import { useState } from 'react'
 import { menu } from '../../../../data/menu'
 
-// const speisekarte = menu.map((section) => {
-//   if (section.name === 'Speisen' || section.name === 'Beilagen') {
+// const format0 = menu.map((section) => {
+//   if (section.name === 'Speisen') {
 //     return (
-//       <div key={section.name} className={MenuCSS.menuDivision}>
-//         <p
-//           className={
-//             section.name === 'Beilagen'
-//               ? MenuCSS.menuHeading
-//               : `${MenuCSS.menuHeading} ${MenuCSS.displaySection}`
-//           }
-//         >
-//           {section.name}
-//         </p>
+//       <div key={section.name} className={MenuCardCSS.menuDivision}>
 //         {section.products.map((product) => {
 //           return (
-//             <div key={product.id} className={MenuCSS.article}>
+//             <div key={product.id} className={MenuCardCSS.article}>
 //               <p
 //                 className={
 //                   product.vegan
-//                     ? `${MenuCSS.text} ${MenuCSS.vegan}`
-//                     : MenuCSS.text
+//                     ? `${MenuCardCSS.text} ${MenuCardCSS.vegan}`
+//                     : MenuCardCSS.text
 //                 }
 //               >
 //                 {product.name}{' '}
-//                 <span className={MenuCSS.smallerText}>{product.extras}</span>
+//                 <span className={MenuCardCSS.smallerText}>
+//                   {product.extras}
+//                 </span>
 //               </p>
-
 //               <p
 //                 className={
 //                   product.vegan
-//                     ? `${MenuCSS.text} ${MenuCSS.vegan}`
-//                     : MenuCSS.text
+//                     ? `${MenuCardCSS.text} ${MenuCardCSS.vegan}`
+//                     : MenuCardCSS.text
 //                 }
 //               >
 //                 {product.price}
@@ -48,31 +40,122 @@ import { menu } from '../../../../data/menu'
 //       </div>
 //     )
 //   }
-//   if (
-//     section.name === 'Alkoholfreie Getränke' ||
-//     section.name === 'Alkoholische Getränke'
-//   ) {
+// })
+
+// const format1 = menu.map((section) => {
+//   if (section.name === 'Beilagen') {
 //     return (
-//       <div key={section.name} className={MenuCSS.menuDivision}>
-//         <p className={MenuCSS.menuHeading}>{section.name}</p>
+//       <div key={section.name} className={MenuCardCSS.menuDivision}>
 //         {section.products.map((product) => {
 //           return (
-//             <div key={product.id} className={MenuCSS.article}>
-//               <p className={MenuCSS.text}>
+//             <div key={product.id} className={MenuCardCSS.article}>
+//               <p
+//                 className={
+//                   product.vegan
+//                     ? `${MenuCardCSS.text} ${MenuCardCSS.vegan}`
+//                     : MenuCardCSS.text
+//                 }
+//               >
 //                 {product.name}{' '}
-//                 <span className={MenuCSS.smallerText}>{product.extras}</span>
+//                 <span className={MenuCardCSS.smallerText}>
+//                   {product.extras}
+//                 </span>
 //               </p>
-//               <div className={MenuCSS.containerDrinks}>
-//                 <p className={MenuCSS.text}>{product.size}</p>
-//                 <p className={MenuCSS.text}>{product.price}</p>
-//               </div>
+//               <p
+//                 className={
+//                   product.vegan
+//                     ? `${MenuCardCSS.text} ${MenuCardCSS.vegan}`
+//                     : MenuCardCSS.text
+//                 }
+//               >
+//                 {product.price}
+//               </p>
 //             </div>
 //           )
 //         })}
 //       </div>
 //     )
-//   }
-// })
+//   }});
+
+//   const format2 = menu.map((section) => {
+//     if (section.name === 'Alkfr. Getränke') {
+//       return (
+//         <div key={section.name} className={MenuCardCSS.menuDivision}>
+//           {section.products.map((product) => {
+//             return (
+//               <div key={product.id} className={MenuCardCSS.article}>
+//                 <p className={MenuCardCSS.text}>
+//                   {product.name}{' '}
+//                   <span className={MenuCardCSS.smallerText}>
+//                     {product.extras}
+//                   </span>
+//                 </p>
+//                 <div className={MenuCardCSS.containerDrinks}>
+//                   <p className={MenuCardCSS.text}>{product.size}</p>
+//                   <p className={MenuCardCSS.text}>{product.price}</p>
+//                 </div>
+//               </div>
+//             )
+//           })}
+//         </div>
+//       )
+//     }})
+
+//   const format3 = menu.map((section) => {
+//     if (section.name === 'Alk. Getränke') {
+//       return (
+//         <div key={section.name} className={MenuCardCSS.menuDivision}>
+//           {section.products.map((product) => {
+//             return (
+//               <div key={product.id} className={MenuCardCSS.article}>
+//                 <p className={MenuCardCSS.text}>
+//                   {product.name}{' '}
+//                   <span className={MenuCardCSS.smallerText}>
+//                     {product.extras}
+//                   </span>
+//                 </p>
+//                 <div className={MenuCardCSS.containerDrinks}>
+//                   <p className={MenuCardCSS.text}>{product.size}</p>
+//                   <p className={MenuCardCSS.text}>{product.price}</p>
+//                 </div>
+//               </div>
+//             )
+//           })}
+//         </div>
+//       )
+//     }
+//   })
+
+const MenuFormat = ({ section, icon }) => {
+  return (
+    <div key={section.name} className={MenuCardCSS.menuDivision}>
+      {section.products.map((product) => (
+        <div key={product.id} className={MenuCardCSS.article}>
+          <p
+            className={
+              product.vegan
+                ? `${MenuCardCSS.text} ${MenuCardCSS.vegan}`
+                : MenuCardCSS.text
+            }
+          >
+            {product.name}{' '}
+            <span className={MenuCardCSS.smallerText}>{product.extras}</span>
+          </p>
+          {icon && (
+            <div className={MenuCardCSS.containerDrinks}>
+              <p className={MenuCardCSS.text}>
+                {product.size || product.price}
+              </p>
+              {product.size && (
+                <p className={MenuCardCSS.text}>{product.price}</p>
+              )}
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  )
+}
 
 export default function MenuCard({ container }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -89,20 +172,24 @@ export default function MenuCard({ container }) {
     ? `${MenuCardCSS.card__bottom} ${MenuCardCSS.show}`
     : MenuCardCSS.card__bottom
 
-  const iconStyle = MenuCardCSS.container__icon
   let icon = null
   if (container === 'Speisen') {
-    icon = <PiHamburger className={iconStyle} />
+    icon = <PiHamburger className={MenuCardCSS.container__icon} />
+  } else if (container === 'Beilagen') {
+    icon = <CiFries className={MenuCardCSS.container__icon} />
+  } else if (container === 'Alkfr. Getränke') {
+    icon = <BsCupStraw className={MenuCardCSS.container__icon} />
+  } else if (container === 'Alk. Getränke') {
+    icon = <IoBeerOutline className={MenuCardCSS.container__icon} />
   }
-  if (container === 'Beilagen') {
-    icon = <CiFries className={iconStyle} />
-  }
-  if (container === 'Alkfr. Getränke') {
-    icon = <BsCupStraw className={iconStyle} />
-  }
-  if (container === 'Alk. Getränke') {
-    icon = <IoBeerOutline className={iconStyle} />
-  }
+
+  const products =
+    container && menu ? (
+      <MenuFormat
+        section={menu.find((section) => section.name === container)}
+        icon={icon}
+      />
+    ) : null
 
   return (
     <div className={MenuCardCSS.container__card} onClick={handleShow}>
@@ -110,16 +197,7 @@ export default function MenuCard({ container }) {
         <div className={MenuCardCSS.container__icon}>{icon}</div>
         <p className={MenuCardCSS.container__name}>{container}</p>
       </div>
-      <div className={cardBottomClass}>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-        <p>contedvnkfl fkgmkfdmglfd fkgmfldkgm</p>
-      </div>
+      <div className={cardBottomClass}>{products}</div>
     </div>
   )
 }

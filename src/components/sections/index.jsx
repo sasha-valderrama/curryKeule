@@ -37,20 +37,7 @@ export default function Sections() {
             {section.heading === 'Speisekarte' ? <Menu /> : null}
             {section.heading === 'Bestseller' ? bestsellerCards : null}
             {section.heading === 'Tageskarte' ? (
-              <>
-                <TestingCard
-               
-                />
-                <TestingCard
-                 
-                />
-                <TestingCard
-                 
-                />
-                <TestingCard
-               
-                />
-              </>
+              <></>
             ) : null}
           </Section>
         )
