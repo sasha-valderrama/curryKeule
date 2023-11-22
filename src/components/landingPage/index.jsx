@@ -15,7 +15,7 @@ export default function LandingPage() {
             </h1>
             <div className={LandingPageCSS.buttons}>
               <Button text="Speisekarte" type="secondary" />
-              <Button text="Tageskarte" type="primary" />
+              <Button text="Bestseller" type="primary" />
             </div>
           </div>
         </section>

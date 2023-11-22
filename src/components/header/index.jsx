@@ -54,9 +54,6 @@ export default function Header() {
             <a href="#Bestseller">Bestseller</a>
           </li>
           <li>
-            <a href="#Tageskarte">Tageskarte</a>
-          </li>
-          <li>
             <a href="#Speisekarte">Speisekarte</a>
           </li>
           <li>Kontakt</li>

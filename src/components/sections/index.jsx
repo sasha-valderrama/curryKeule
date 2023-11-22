@@ -26,7 +26,7 @@ export default function Sections() {
         return (
           <Section
             key={section.id}
-            id={section.function}
+            id={section.heading}
             section={section.heading}
             subheading={section.subheading}
             imgURL={section.imgURL}
