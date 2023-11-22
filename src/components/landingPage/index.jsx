@@ -11,7 +11,7 @@ export default function LandingPage() {
           <div className={LandingPageCSS.container}>
             <p className={LandingPageCSS.preHeading}>Dit is jejessen!</p>
             <h1 className={LandingPageCSS.heading}>
-              Bester Currywust im juten alten Wedding
+              Currywust im juten alten Wedding
             </h1>
             <div className={LandingPageCSS.buttons}>
               <Button text="Speisekarte" type="secondary" />

@@ -4,7 +4,8 @@ Website using React and CSS modules.
 
 ## 📽️ Website
 
-Live preview of the project is [here](https://curry-keule.netlify.app/)
+Live preview of the project is [here](https://www.curry-keule.de
+)
 
 
 ## 👷‍♀️ Built with
