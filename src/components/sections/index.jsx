@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { bestseller } from '../../data/bestseller'
 import { sections } from '../../data/sections'
 import BestsellerCard from '../ui/cards/bestsellerCard'
